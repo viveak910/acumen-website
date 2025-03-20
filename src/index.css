@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvsUZiYySUhiCXAA.woff) format('woff');
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.details {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  z-index: 20;
+}
