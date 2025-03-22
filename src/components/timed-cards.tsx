@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Globe, Search, User } from "lucide-react";
+
 import { useSwipeable } from 'react-swipeable';
 
 import { gsap } from "gsap";
@@ -435,7 +435,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
             </div>
           ))}
         </div>
-
+<div id = "details-des" className="details hidden md:block">
         <div id="details-even" className="details">
           <div className="place-box h-[46px] overflow-hidden">
             <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
@@ -503,6 +503,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
       Discover Location
     </button>
   </div>
+</div>
 </div>
 
         <div id="pagination" className="absolute left-0 top-0 inline-flex">
