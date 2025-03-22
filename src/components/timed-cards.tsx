@@ -470,7 +470,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
           </div>
         </div>
         
-        <div id="details-odd" className="details hidden md:block">
+        <div id="details-odd" className="details sm:hidden md:block">
   <div className="place-box h-[46px] overflow-hidden">
     <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
       {data[0].place}
