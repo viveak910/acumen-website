@@ -469,42 +469,41 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
             </button>
           </div>
         </div>
-        {!isMobile && (
-        <div id="details-odd" className="details">
-          <div className="place-box h-[46px] overflow-hidden">
-            <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
-              {data[0].place}
-            </div>
-          </div>
-          
-          <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
-            <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
-          </div>
-          <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
-            <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
-          </div>
-          <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
-          <div className="cta mt-6 flex items-center md:w-[500px] w-full">
-            <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
-              Discover Location
-            </button>
-          </div>
-        </div>
-        )}
+        
+        <div id="details-odd" className="details hidden md:block">
+  <div className="place-box h-[46px] overflow-hidden">
+    <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
+      {data[0].place}
+    </div>
+  </div>
+  
+  <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
+    <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
+  </div>
+  <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
+    <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
+  </div>
+  <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
+  <div className="cta mt-6 flex items-center md:w-[500px] w-full">
+    <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="w-5 h-5"
+      >
+        <path
+          fillRule="evenodd"
+          d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </button>
+    <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
+      Discover Location
+    </button>
+  </div>
+</div>
 
         <div id="pagination" className="absolute left-0 top-0 inline-flex">
           <div
