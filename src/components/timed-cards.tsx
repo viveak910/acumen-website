@@ -469,13 +469,14 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
             </button>
           </div>
         </div>
-
+        {!isMobile && (
         <div id="details-odd" className="details">
           <div className="place-box h-[46px] overflow-hidden">
             <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
               {data[0].place}
             </div>
           </div>
+          
           <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
             <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
           </div>
@@ -503,6 +504,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
             </button>
           </div>
         </div>
+        )}
 
         <div id="pagination" className="absolute left-0 top-0 inline-flex">
           <div
