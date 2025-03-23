@@ -12,7 +12,7 @@ const data = [
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
     image:
-      "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=800&q=80",
+      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
   },
   {
     place: "Japan Alps",
@@ -21,7 +21,8 @@ const data = [
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
     image:
-      "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80",
+      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
+      bgimage: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80",
   },
   {
     place: "Sahara Desert - Morocco",
@@ -30,7 +31,7 @@ const data = [
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
     image:
-      "https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=800&q=80",
+      "https://media-hosting.imagekit.io//2cc6474603874928/13.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ztlRUyk9VUGilPr1y6Whk-z6ktBgSc7GTp81d2jI3QDnIiE2Ma72D45vMwm7wUVN0FGFQGhKJiDtvAf5Um8Stv7ebtTuHwGsVXd57GSV6K8csZNi9GRe9lMuFSpBiDJFcBpEiNb7zWm6HNdvFOTGarljG1Tq~jIRtW3Jkp86uQPgQ4gf3h~W700QXG0eKqdgTwcoZNFglHkQtgcgMqFU2gIO621yTsAOyloRI4u~a4nVO8QVOXGM0c7SvvB7879Ol85AeCkrcndM1ezEf1m~x--k50-yPoMwYB8pqM50qFgU3lft1xD0ft9Ey~wUvUAWuog-3RPBlyJpOMcNoob0nw__",
   },
   {
     place: "Sierra Nevada - USA",
@@ -39,7 +40,7 @@ const data = [
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
     image:
-      "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80",
+      "https://media-hosting.imagekit.io//9610122e4e574541/12.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mLj26FeFo~DuiFZGH6ZrpEJgQBLhBi1rm~Bc-~2AQbF2yS6r4l87jl6PMYGPMot8EeyWyFwhWWo~nYaVUPSX-yScHXl0NESeiO7wDQWVzdDAjAxJ0nTNfmFJMPTZjIy9Xhipmu66uDsaNXschCJpDNe8nB~bsMmfMQADkVsGaNWlE8zhv50z~UTxy2hKkbCF3iIQlytgO1L-gGOwpYUXhzS7uOfOdSrAYUK5A1wc5J9TPJlU0Erkj0olp-HYTxC5MxSLTQKLzX55l7FQdlS8qUjkuJAp1vuhJE~P-zdyipRYKpU-anmcM06tJ0SSrkudc-Ss-yu-9tw8mgRl-fFXpg__",
   },
   {
     place: "Tarifa - Spain",
@@ -48,7 +49,7 @@ const data = [
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
   },
   {
     place: "Cappadocia - Turkey",
@@ -57,7 +58,7 @@ const data = [
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
     image:
-      "https://images.unsplash.com/photo-1570143675316-91fb888f8afe?w=800&q=80",
+      "https://media-hosting.imagekit.io//fac8b7a25ff74ae6/11.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=v2OcU18mu-T4-CEm2QhIrqr~fzsWIMx9B5s1G6cBAXhdWu7XMWEMpqmAQaXtGrWzdohrHmZo3q0EOfEQNNjB1c9z1rm6laHWTLp7SVq1AiLb0oDhkq5C~ErTNfh~LviUelHGkqbtc~NDeP~xIAm9ezmRyNwaYIlSzdViAJK9AQxxY3eDVHxFsntwySwV8F2PV8-ZmXryseVwhFEdRpMvnqU9vvD-a5v9MPyEH5aDzBVMgKyELLTvvCSRUJgQd3XX~MqoLmGEF~zsZuGjUrE9CwXMwBQWHruClFzb1G9OZZ1Fp5FcE0QvtidXADN63RSBwCog02cwIzzChO-8OHdtLw__",
   },
 ];
 
@@ -402,6 +403,22 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
 
     loadImages();
   }, []);
+  useEffect(() => {
+    let intervalId: ReturnType<typeof setInterval> | undefined;
+    const timeoutId = setTimeout(() => {
+      intervalId = setInterval(() => {
+        if (clicks.current === 0) {
+          step('next');
+        }
+      },3000);
+    }, 3000);
+  
+    return () => {
+      clearTimeout(timeoutId);
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, []);
+ 
 
   return (
     <div className="relative h-screen overflow-hidden bg-[#1a1a1a] text-[#FFFFFFDD]">
