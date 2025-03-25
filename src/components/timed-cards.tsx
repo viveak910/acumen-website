@@ -411,7 +411,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
           step('next');
         }
       },3000);
-    }, 3000);
+    }, 0);
   
     return () => {
       clearTimeout(timeoutId);
