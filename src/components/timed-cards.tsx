@@ -265,6 +265,16 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
           borderRadius: 0,
           ease,
           duration: 0.5,
+          onStart: () => {
+            const bgDiv = document.querySelector(`${getCard(active)} > div`);
+            if (bgDiv) {
+              gsap.set(bgDiv, {
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${data[active].image})`,
+                opacity: 0
+              });
+              gsap.to(bgDiv, { opacity: 1, duration: 0.5 });
+            }
+          }
       });
   } else {
       gsap.to(getCard(prv), { scale: 1.5, ease });
