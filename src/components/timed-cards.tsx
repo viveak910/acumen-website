@@ -10,8 +10,8 @@ const data = [
     title2: "ANTONIEN",
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-    image: "https://i.ibb.co/nNR07QNH/1.jpg",
-    bimage : "https://i.ibb.co/nNR07QNH/2.jpg",
+    image: "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+    bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/1.jpg?updatedAt=1743098579168",
   },
   {
     place: "Japan Alps",
@@ -19,8 +19,8 @@ const data = [
     title2: "PREFECTURE",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-      image: "https://i.ibb.co/mVFvPVmb/2.jpg",
-      bimage : "https://i.ibb.co/mVFvPVmb/1.jpg",
+      image: "https://ik.imagekit.io/tmdgdnv8a/posters/1.jpg?updatedAt=1743098579168",
+      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
   },
   {
     place: "Sahara Desert - Morocco",
