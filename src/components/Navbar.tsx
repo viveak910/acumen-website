@@ -1,4 +1,4 @@
-import { Globe, Search, User } from 'lucide-react';
+import { Globe} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Navbar() {

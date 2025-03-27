@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
 import { useSwipeable } from 'react-swipeable';
-
 import { gsap } from "gsap";
 
 const data = [
@@ -11,8 +9,8 @@ const data = [
     title2: "ANTONIEN",
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
+    image: "posters/1.jpg",
+    bimage : "posters/2.jpg",
   },
   {
     place: "Japan Alps",
@@ -20,9 +18,8 @@ const data = [
     title2: "PREFECTURE",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
-      bgimage: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80",
+    image: "posters/2.jpg",
+    bimage : "posters/1.jpg",
   },
   {
     place: "Sahara Desert - Morocco",
@@ -30,8 +27,8 @@ const data = [
     title2: "MEROUGA",
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-    image:
-      "https://media-hosting.imagekit.io//2cc6474603874928/13.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ztlRUyk9VUGilPr1y6Whk-z6ktBgSc7GTp81d2jI3QDnIiE2Ma72D45vMwm7wUVN0FGFQGhKJiDtvAf5Um8Stv7ebtTuHwGsVXd57GSV6K8csZNi9GRe9lMuFSpBiDJFcBpEiNb7zWm6HNdvFOTGarljG1Tq~jIRtW3Jkp86uQPgQ4gf3h~W700QXG0eKqdgTwcoZNFglHkQtgcgMqFU2gIO621yTsAOyloRI4u~a4nVO8QVOXGM0c7SvvB7879Ol85AeCkrcndM1ezEf1m~x--k50-yPoMwYB8pqM50qFgU3lft1xD0ft9Ey~wUvUAWuog-3RPBlyJpOMcNoob0nw__",
+    image: "posters/3.jpg",
+    bimage : "posters/1.jpg",
   },
   {
     place: "Sierra Nevada - USA",
@@ -39,8 +36,8 @@ const data = [
     title2: "NATIONAL PARK",
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-    image:
-      "https://media-hosting.imagekit.io//9610122e4e574541/12.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mLj26FeFo~DuiFZGH6ZrpEJgQBLhBi1rm~Bc-~2AQbF2yS6r4l87jl6PMYGPMot8EeyWyFwhWWo~nYaVUPSX-yScHXl0NESeiO7wDQWVzdDAjAxJ0nTNfmFJMPTZjIy9Xhipmu66uDsaNXschCJpDNe8nB~bsMmfMQADkVsGaNWlE8zhv50z~UTxy2hKkbCF3iIQlytgO1L-gGOwpYUXhzS7uOfOdSrAYUK5A1wc5J9TPJlU0Erkj0olp-HYTxC5MxSLTQKLzX55l7FQdlS8qUjkuJAp1vuhJE~P-zdyipRYKpU-anmcM06tJ0SSrkudc-Ss-yu-9tw8mgRl-fFXpg__",
+    image: "posters/4.jpg",
+    bimage : "posters/1.jpg",
   },
   {
     place: "Tarifa - Spain",
@@ -48,8 +45,8 @@ const data = [
     title2: "BEACH",
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
+    image: "posters/5.jpg",
+    bimage : "posters/1.jpg",
   },
   {
     place: "Cappadocia - Turkey",
@@ -57,14 +54,94 @@ const data = [
     title2: "VALLEY",
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-    image:
-      "https://media-hosting.imagekit.io//fac8b7a25ff74ae6/11.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=v2OcU18mu-T4-CEm2QhIrqr~fzsWIMx9B5s1G6cBAXhdWu7XMWEMpqmAQaXtGrWzdohrHmZo3q0EOfEQNNjB1c9z1rm6laHWTLp7SVq1AiLb0oDhkq5C~ErTNfh~LviUelHGkqbtc~NDeP~xIAm9ezmRyNwaYIlSzdViAJK9AQxxY3eDVHxFsntwySwV8F2PV8-ZmXryseVwhFEdRpMvnqU9vvD-a5v9MPyEH5aDzBVMgKyELLTvvCSRUJgQd3XX~MqoLmGEF~zsZuGjUrE9CwXMwBQWHruClFzb1G9OZZ1Fp5FcE0QvtidXADN63RSBwCog02cwIzzChO-8OHdtLw__",
+    image: "posters/6.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Kyoto - Japan",
+    title: "FUSHIMI",
+    title2: "INARI",
+    description:
+      "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
+    image: "posters/7.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Bora Bora - French",
+    title: "BORA",
+    title2: "BORA",
+    description:
+      "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
+    image: "posters/8.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Machu Picchu - Peru",
+    title: "MACHU",
+    title2: "PICCHU",
+    description:
+      "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
+    image: "posters/9.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Santorini - Greece",
+    title: "OIA",
+    title2: "VILLAGE",
+    description:
+      "Oia, a picturesque village on the island of Santorini, is renowned for its whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea. Its romantic ambiance and stunning vistas make it a sought-after destination for travelers worldwide.",
+    image: "posters/10.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Banff - Canada",
+    title: "LAKE",
+    title2: "LOUISE",
+    description:
+      "Lake Louise, located in Banff National Park, is a pristine alpine lake known for its turquoise waters, surrounded by towering mountains and glaciers. It's a haven for outdoor enthusiasts, offering activities such as hiking, canoeing, and ice skating.",
+    image: "posters/11.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Great Barrier Reef - Australia",
+    title: "GREAT",
+    title2: "REEF",
+    description:
+      "The Great Barrier Reef, the world's largest coral reef system, is a vibrant underwater ecosystem teeming with marine life. Snorkeling and diving reveal a kaleidoscope of colors and diverse species, making it a paradise for nature lovers.",
+    image: "posters/12.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Zhangjiajie - China",
+    title: "AVATAR",
+    title2: "MOUNTAINS",
+    description:
+      "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
+    image: "posters/13.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Salar de Uyuni - Bolivia",
+    title: "SALAR",
+    title2: "UYUNI",
+    description:
+      "Salar de Uyuni, the world's largest salt flat, is a vast, otherworldly expanse that creates stunning mirror-like reflections during the rainy season. Its surreal beauty and unique geological formations make it a photographer's dream.",
+    image: "posters/14.jpg",
+    bimage : "posters/1.jpg",
+  },
+  {
+    place: "Iceland",
+    title: "REYKJAVIK",
+    title2: "CAPITAL",
+    description:
+      "Reykjavik, the capital of Iceland, is a vibrant city known for its colorful buildings, geothermal spas, and proximity to natural wonders like the Blue Lagoon and the Northern Lights. It's a gateway to Iceland's stunning landscapes and unique cultural experiences.",
+    image: "posters/15.jpg",
+    bimage : "posters/1.jpg",
   },
 ];
 
 export function TimedCards() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  let order = useRef([0, 1, 2, 3, 4, 5]);
+  let order = useRef([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
   let detailsEven = useRef(true);
   let clicks = useRef(0);
 
@@ -108,10 +185,23 @@ const handlePrevCard = () => {
     }
 };
 
+// Add an autoplay ref to track the timeout/interval
+const autoplayRef = useRef<{
+  timeoutId: ReturnType<typeof setTimeout> | null;
+  intervalId: ReturnType<typeof setInterval> | null;
+}>({ timeoutId: null, intervalId: null });
+
+// Modify your step function to reset the autoplay
 const step = async (direction: 'next' | 'prev' = 'next') => {
   if (clicks.current > 0) return;
   clicks.current = 1;
 
+  // Reset autoplay when step is called manually
+  if (autoplayRef.current.intervalId) {
+    clearInterval(autoplayRef.current.intervalId);
+    autoplayRef.current.intervalId = null;
+  }
+  
   // Handle array manipulation based on direction
   if (direction === 'next') {
       order.current.push(order.current.shift()!);
@@ -153,6 +243,16 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
   // Card animations
   gsap.set(getCard(prv), { zIndex: 10 });
   gsap.set(getCard(active), { zIndex: 20 });
+
+  // Add this new code for the background overlay
+  const activeCardOverlay = document.querySelector(`${getCard(active)} > div`);
+  if (activeCardOverlay) {
+      gsap.set(activeCardOverlay, { 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${isMobile ? data[active].image : data[active].bimage})`,
+          opacity: 0
+      });
+      gsap.to(activeCardOverlay, { opacity: 1, duration: 0.5, delay: 0.2 });
+  }
 
   // Mobile-specific animations
   if (isMobile) {
@@ -208,6 +308,16 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
               scale: 1,
           });
 
+          // Make sure the gradient overlay is properly maintained for the active card
+          const activeCardOverlay = document.querySelector(`${getCard(active)} > div`);
+          if (activeCardOverlay) {
+              gsap.set(activeCardOverlay, {
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${isMobile ? data[active].image : data[active].bimage})`,
+                  opacity: 1,
+                  filter: "brightness(0.8) contrast(1.2)"
+              });
+          }
+
           gsap.set(getCardContent(prv), {
               x: xNew,
               y: offsetTop + cardHeight - 100,
@@ -227,6 +337,13 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
 
           // Reset click counter
           clicks.current = 0;
+
+          // Restart autoplay after manual navigation
+          autoplayRef.current.intervalId = setInterval(() => {
+            if (clicks.current === 0) {
+              step('next');
+            }
+          }, 3000);
       },
   });
 
@@ -299,6 +416,26 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
       width: window.innerWidth,
       height: window.innerHeight,
     });
+
+    // For ALL cards, set the overlay opacity
+    data.forEach((_, index) => {
+      const cardOverlay = document.querySelector(`${getCard(index)} > div`);
+      if (cardOverlay) {
+        gsap.set(cardOverlay, { 
+          opacity: index === active ? 1 : 0
+        });
+      }
+    });
+
+    const activeCardOverlay = document.querySelector(`${getCard(active)} > div`);
+    if (activeCardOverlay) {
+        gsap.set(activeCardOverlay, { 
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${isMobile ? data[active].image : data[active].bimage})`,
+            opacity: 1,
+            filter: "brightness(0.8) contrast(1.2)"
+        });
+    }
+
     gsap.set(getCardContent(active), { x: 0, y: 0, opacity: 0 });
     gsap.set(detailsActive, { 
       opacity: 0, 
@@ -332,8 +469,8 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
       });
       gsap.set(getCardContent(i), {
         x: newOffsetLeft + 400 + index * (newCardWidth + newGap),
-        zIndex: 40,
         y: newOffsetTop + newCardHeight - 100,
+        zIndex: 40,
       });
       gsap.set(getSliderItem(i), { x: (index + 1) * numberSize });
     });
@@ -368,27 +505,39 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
     gsap.to(detailsActive, { opacity: 1, x: 0, ease, delay: startDelay });
   };
 
-  // Removed duplicate handlePrevCard declaration
-
   useEffect(() => {
     const loadImages = async () => {
       let loadedCount = 0;
       try {
         await Promise.all(
-          data.map(({ image }) => {
-            return new Promise((resolve) => {
-              const img = new Image();
-              img.onload = () => {
-                loadedCount++;
-                resolve(true);
-              };
-              img.onerror = () => {
-                console.warn(`Failed to load image: ${image}`);
-                resolve(false);
-              };
-              img.src = image;
-            });
-          })
+          data.map(({ image, bimage }) => {
+            return Promise.all([
+              new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => {
+                  loadedCount++;
+                  resolve(true);
+                };
+                img.onerror = () => {
+                  console.warn(`Failed to load image: ${image}`);
+                  resolve(false);
+                };
+                img.src = image;
+              }),
+              new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => {
+                  loadedCount++;
+                  resolve(true);
+                };
+                img.onerror = () => {
+                  console.warn(`Failed to load background image: ${bimage}`);
+                  resolve(false);
+                };
+                img.src = bimage;
+              })
+            ]);
+          }).flat()
         );
       } catch (error) {
         console.error("Error loading images:", error);
@@ -403,22 +552,22 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
 
     loadImages();
   }, []);
+
+  // Update the useEffect for autoplay to use the ref
   useEffect(() => {
-    let intervalId: ReturnType<typeof setInterval> | undefined;
-    const timeoutId = setTimeout(() => {
-      intervalId = setInterval(() => {
+    autoplayRef.current.timeoutId = setTimeout(() => {
+      autoplayRef.current.intervalId = setInterval(() => {
         if (clicks.current === 0) {
           step('next');
         }
-      },3000);
+      }, 3000);
     }, 0);
-  
+    
     return () => {
-      clearTimeout(timeoutId);
-      if (intervalId) clearInterval(intervalId);
+      if (autoplayRef.current.timeoutId) clearTimeout(autoplayRef.current.timeoutId);
+      if (autoplayRef.current.intervalId) clearInterval(autoplayRef.current.intervalId);
     };
   }, []);
- 
 
   return (
     <div className="relative h-screen overflow-hidden bg-[#1a1a1a] text-[#FFFFFFDD]">
@@ -430,7 +579,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
                     <div
                         key={index}
                         id={`card${index}`}
-                        className="card absolute left-0 top-0 transition-transform duration-300"
+                        className="card absolute left-0 top-0 transition-all duration-300 overflow-hidden"
                         style={{
                             backgroundImage: `url(${item.image})`,
                             backgroundSize: "cover",
@@ -441,137 +590,147 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
                             zIndex: index === order.current[0] ? 20 : 30,
                             borderRadius: index === order.current[0] ? 0 : '10px',
                         }}
-                    />
+                    >
+                        <div
+                            className="absolute inset-0 transition-opacity duration-500"
+                            style={{
+                                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${isMobile ? item.image : item.bimage})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                opacity: index === order.current[0] ? 1 : 0,
+                                filter: "brightness(0.8) contrast(1.2)"
+                            }}
+                        />
+                    </div>
                 ))}
-          {data.map((item, index) => (
-            <div key={index} id={`card-content-${index}`} className="card-content absolute left-0 top-0 pl-4">
-              <div className="content-start w-[30px] h-[5px] rounded-full bg-[#FFFFFFDD]" />
-              <div className="content-place mt-1.5 text-sm font-medium">{item.place}</div>
-              <div className="content-title-1 font-oswald text-xl font-semibold">{item.title}</div>
-              <div className="content-title-2 font-oswald text-xl font-semibold">{item.title2}</div>
+                {data.map((item, index) => (
+                    <div key={index} id={`card-content-${index}`} className="card-content absolute left-0 top-0 pl-4">
+                        <div className="content-start w-[30px] h-[5px] rounded-full bg-[#FFFFFFDD]" />
+                        <div className="content-place mt-1.5 text-sm font-medium">{item.place}</div>
+                        <div className="content-title-1 font-oswald text-xl font-semibold">{item.title}</div>
+                        <div className="content-title-2 font-oswald text-xl font-semibold">{item.title2}</div>
+                    </div>
+                ))}
             </div>
-          ))}
         </div>
-<div id = "details-des" className="details hidden md:block">
-        <div id="details-even" className="details">
-          <div className="place-box h-[46px] overflow-hidden">
-            <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
-              {data[0].place}
+
+        <div id="details-des" className="details hidden md:block">
+            <div id="details-even" className="details">
+                <div className="place-box h-[46px] overflow-hidden">
+                    <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
+                        {data[0].place}
+                    </div>
+                </div>
+                <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
+                    <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
+                </div>
+                <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
+                    <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
+                </div>
+                <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
+                <div className="cta mt-6 flex items-center md:w-[500px] w-full">
+                    <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-5 h-5"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
+                    </button>
+                    <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
+                        Discover Location
+                    </button>
+                </div>
             </div>
-          </div>
-          <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
-            <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
-          </div>
-          <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
-            <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
-          </div>
-          <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
-          <div className="cta mt-6 flex items-center md:w-[500px] w-full">
-            <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
-              Discover Location
-            </button>
-          </div>
+            <div id="details-odd" className="details sm:hidden md:block">
+                <div className="place-box h-[46px] overflow-hidden">
+                    <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
+                        {data[0].place}
+                    </div>
+                </div>
+                <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
+                    <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
+                </div>
+                <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
+                    <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
+                </div>
+                <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
+                <div className="cta mt-6 flex items-center md:w-[500px] w-full">
+                    <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-5 h-5"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
+                    </button>
+                    <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
+                        Discover Location
+                    </button>
+                </div>
+            </div>
         </div>
-        
-        <div id="details-odd" className="details sm:hidden md:block">
-  <div className="place-box h-[46px] overflow-hidden">
-    <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">
-      {data[0].place}
-    </div>
-  </div>
-  
-  <div className="title-box-1 mt-0.5 h-[100px] overflow-hidden">
-    <div className="title-1 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title}</div>
-  </div>
-  <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
-    <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
-  </div>
-  <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
-  <div className="cta mt-6 flex items-center md:w-[500px] w-full">
-    <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-5 h-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </button>
-    <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
-      Discover Location
-    </button>
-  </div>
-</div>
-</div>
 
         <div id="pagination" className="absolute left-0 top-0 inline-flex">
-          <div
-            className="arrow arrow-left grid place-items-center w-[50px] h-[50px] rounded-full border-2 border-[#ffffff55] z-[60] cursor-pointer"
-            onClick={handlePrevCard}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6 stroke-2 text-[#ffffff99]"
+            <div
+                className="arrow arrow-left grid place-items-center w-[50px] h-[50px] rounded-full border-2 border-[#ffffff55] z-[60] cursor-pointer"
+                onClick={handlePrevCard}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-          </div>
-          <div
-            className="arrow arrow-right ml-5 grid place-items-center w-[50px] h-[50px] rounded-full border-2 border-[#ffffff55] z-[60] cursor-pointer"
-            onClick={handleNextCard}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-6 h-6 stroke-2 text-[#ffffff99]"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-          </div>
-          <div className="progress-sub-container ml-6 z-[60] md:w-[500px] w-[200px] h-[50px] flex items-center">
-            <div className="progress-sub-background md:w-[500px] w-[200px] h-[3px] bg-[#ffffff33]">
-              <div className="progress-sub-foreground h-[3px] bg-[#ecad29]" />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className="w-6 h-6 stroke-2 text-[#ffffff99]"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
             </div>
-          </div>
-          <div id="slide-numbers" className="slide-numbers w-[50px] h-[50px] overflow-hidden z-[60] relative">
-            {data.map((_, index) => (
-              <div
-                key={index}
-                id={`slide-item-${index}`}
-                className="item absolute top-0 left-0 w-[50px] h-[50px] grid place-items-center text-white text-3xl font-bold"
-              >
-                {index + 1}
-              </div>
-            ))}
-          </div>
+            <div
+                className="arrow arrow-right ml-5 grid place-items-center w-[50px] h-[50px] rounded-full border-2 border-[#ffffff55] z-[60] cursor-pointer"
+                onClick={handleNextCard}
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className="w-6 h-6 stroke-2 text-[#ffffff99]"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div className="progress-sub-container ml-6 z-[60] md:w-[500px] w-[200px] h-[50px] flex items-center">
+                <div className="progress-sub-background md:w-[500px] w-[200px] h-[3px] bg-[#ffffff33]">
+                    <div className="progress-sub-foreground h-[3px] bg-[#ecad29]" />
+                </div>
+            </div>
+            <div id="slide-numbers" className="slide-numbers w-[50px] h-[50px] overflow-hidden z-[60] relative">
+                {data.map((_, index) => (
+                    <div
+                        key={index}
+                        id={`slide-item-${index}`}
+                        className="item absolute top-0 left-0 w-[50px] h-[50px] grid place-items-center text-white text-3xl font-bold"
+                    >
+                        {index + 1}
+                    </div>
+                ))}
+            </div>
         </div>
 
         <div className="cover absolute left-0 top-0 w-screen h-screen bg-white z-[100]" />
-      </div>
     </div>
   );
 }
