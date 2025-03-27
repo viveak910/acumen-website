@@ -10,8 +10,8 @@ const data = [
     title2: "ANTONIEN",
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-    image: "posters/1.jpg",
-    bimage : "posters/2.jpg",
+    image: "https://i.ibb.co/nNR07QNH/1.jpg",
+    bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Japan Alps",
@@ -19,8 +19,8 @@ const data = [
     title2: "PREFECTURE",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-    image: "posters/2.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Sahara Desert - Morocco",
@@ -28,8 +28,8 @@ const data = [
     title2: "MEROUGA",
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-    image: "posters/3.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Sierra Nevada - USA",
@@ -37,8 +37,8 @@ const data = [
     title2: "NATIONAL PARK",
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-    image: "posters/4.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Tarifa - Spain",
@@ -46,8 +46,8 @@ const data = [
     title2: "BEACH",
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-    image: "posters/5.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Cappadocia - Turkey",
@@ -55,8 +55,8 @@ const data = [
     title2: "VALLEY",
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-    image: "posters/6.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Kyoto - Japan",
@@ -64,8 +64,8 @@ const data = [
     title2: "INARI",
     description:
       "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
-    image: "posters/7.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Bora Bora - French",
@@ -73,8 +73,8 @@ const data = [
     title2: "BORA",
     description:
       "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
-    image: "posters/8.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Machu Picchu - Peru",
@@ -82,8 +82,8 @@ const data = [
     title2: "PICCHU",
     description:
       "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
-    image: "posters/9.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Santorini - Greece",
@@ -91,8 +91,8 @@ const data = [
     title2: "VILLAGE",
     description:
       "Oia, a picturesque village on the island of Santorini, is renowned for its whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea. Its romantic ambiance and stunning vistas make it a sought-after destination for travelers worldwide.",
-    image: "posters/10.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+    bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Banff - Canada",
@@ -100,8 +100,8 @@ const data = [
     title2: "LOUISE",
     description:
       "Lake Louise, located in Banff National Park, is a pristine alpine lake known for its turquoise waters, surrounded by towering mountains and glaciers. It's a haven for outdoor enthusiasts, offering activities such as hiking, canoeing, and ice skating.",
-    image: "posters/11.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Great Barrier Reef - Australia",
@@ -109,8 +109,8 @@ const data = [
     title2: "REEF",
     description:
       "The Great Barrier Reef, the world's largest coral reef system, is a vibrant underwater ecosystem teeming with marine life. Snorkeling and diving reveal a kaleidoscope of colors and diverse species, making it a paradise for nature lovers.",
-    image: "posters/12.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Zhangjiajie - China",
@@ -118,8 +118,8 @@ const data = [
     title2: "MOUNTAINS",
     description:
       "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
-    image: "posters/13.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Salar de Uyuni - Bolivia",
@@ -127,8 +127,8 @@ const data = [
     title2: "UYUNI",
     description:
       "Salar de Uyuni, the world's largest salt flat, is a vast, otherworldly expanse that creates stunning mirror-like reflections during the rainy season. Its surreal beauty and unique geological formations make it a photographer's dream.",
-    image: "posters/14.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
   {
     place: "Iceland",
@@ -136,8 +136,8 @@ const data = [
     title2: "CAPITAL",
     description:
       "Reykjavik, the capital of Iceland, is a vibrant city known for its colorful buildings, geothermal spas, and proximity to natural wonders like the Blue Lagoon and the Northern Lights. It's a gateway to Iceland's stunning landscapes and unique cultural experiences.",
-    image: "posters/15.jpg",
-    bimage : "posters/1.jpg",
+      image: "https://i.ibb.co/nNR07QNH/1.jpg",
+      bimage : "https://i.ibb.co/nNR07QNH/1.jpg",
   },
 ];
 
