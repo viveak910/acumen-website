@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef, useState } from "react";
 import { useSwipeable } from 'react-swipeable';
 import { gsap } from "gsap";
