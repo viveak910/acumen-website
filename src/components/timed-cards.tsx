@@ -56,7 +56,7 @@ const data = [
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
       image: "https://i.ibb.co/nNR07QNH/6.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/6.jpg",
+      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
   },
   {
     place: "Kyoto - Japan",
@@ -65,7 +65,7 @@ const data = [
     description:
       "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
       image: "https://i.ibb.co/nNR07QNH/7.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/7.jpg",
+      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
   },
   {
     place: "Bora Bora - French",
@@ -74,7 +74,7 @@ const data = [
     description:
       "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
       image: "https://i.ibb.co/nNR07QNH/8.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/8.jpg",
+      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
   },
   {
     place: "Machu Picchu - Peru",
@@ -83,7 +83,7 @@ const data = [
     description:
       "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
       image: "https://i.ibb.co/nNR07QNH/9.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/9.jpg",
+      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
   },
   {
     place: "Santorini - Greece",
