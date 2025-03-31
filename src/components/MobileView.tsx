@@ -6,59 +6,139 @@ import { gsap } from "gsap";
 
 const data = [
   {
-    place: "Switzerland Alps",
-    title: "SAINT",
-    title2: "ANTONIEN",
+    place: "",
+    title: "PAPER",
+    title2: "AND POSTER",
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
+    image: "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
+    bimage : "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
   },
   {
-    place: "Japan Alps",
-    title: "NAGANO",
-    title2: "PREFECTURE",
+    place: "",
+    title: "WEBATHON",
+    title2: "",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
-      bgimage: "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/2.jpg?updatedAt=1743174841409",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
   },
   {
-    place: "Sahara Desert - Morocco",
-    title: "MARRAKECH",
-    title2: "MEROUGA",
+    place: "",
+    title: "PROJECT",
+    title2: "EXPO",
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-    image:
-      "https://media-hosting.imagekit.io//2cc6474603874928/13.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ztlRUyk9VUGilPr1y6Whk-z6ktBgSc7GTp81d2jI3QDnIiE2Ma72D45vMwm7wUVN0FGFQGhKJiDtvAf5Um8Stv7ebtTuHwGsVXd57GSV6K8csZNi9GRe9lMuFSpBiDJFcBpEiNb7zWm6HNdvFOTGarljG1Tq~jIRtW3Jkp86uQPgQ4gf3h~W700QXG0eKqdgTwcoZNFglHkQtgcgMqFU2gIO621yTsAOyloRI4u~a4nVO8QVOXGM0c7SvvB7879Ol85AeCkrcndM1ezEf1m~x--k50-yPoMwYB8pqM50qFgU3lft1xD0ft9Ey~wUvUAWuog-3RPBlyJpOMcNoob0nw__",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/3.jpg?updatedAt=1743174841415",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
   },
   {
-    place: "Sierra Nevada - USA",
-    title: "YOSEMITE",
-    title2: "NATIONAL PARK",
+    place: "",
+    title: "PHOTOGRAPHY",
+    title2: "CHALLENGE",
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-    image:
-      "https://media-hosting.imagekit.io//9610122e4e574541/12.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mLj26FeFo~DuiFZGH6ZrpEJgQBLhBi1rm~Bc-~2AQbF2yS6r4l87jl6PMYGPMot8EeyWyFwhWWo~nYaVUPSX-yScHXl0NESeiO7wDQWVzdDAjAxJ0nTNfmFJMPTZjIy9Xhipmu66uDsaNXschCJpDNe8nB~bsMmfMQADkVsGaNWlE8zhv50z~UTxy2hKkbCF3iIQlytgO1L-gGOwpYUXhzS7uOfOdSrAYUK5A1wc5J9TPJlU0Erkj0olp-HYTxC5MxSLTQKLzX55l7FQdlS8qUjkuJAp1vuhJE~P-zdyipRYKpU-anmcM06tJ0SSrkudc-Ss-yu-9tw8mgRl-fFXpg__",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/4.jpg?updatedAt=1743174841419",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
   },
   {
-    place: "Tarifa - Spain",
-    title: "LOS LANCES",
-    title2: "BEACH",
+    place: "",
+    title: "IPL",
+    title2: "AUCTION",
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-    image:
-      "https://media-hosting.imagekit.io//6e3d565224134064/14.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=StyyQ~kEbY7rsKutonkmjGY6l~Q3LyClYsBt6kHFrfyjb~zj4ndUULTH~Wff5mKpKDkRWuMrEFfC8SbYlU-GxQKGL0b8OKXjgt1fvxKlo~2HyPZL0xSogGtJPpdKsDg44~Bz8251mlMpj7ZjwFZiK2DK7wDCA2o8NrBmFhW8qSc3BtsKNqkLUSuiyjN94CL6EBq-4H~fnwEF0waDUshhlKyxHDTNgm4wKrDzdSHbD~cCgJHJcn-Wcp5cITCPo7gnJCNlhzAhjYFuBlDlLgcdh7R1Qe-HlSqHoYG31UkH1aqpgwhD0SNYiD21WNq~LccAekPAGxSwBVSjxaaGC7Hb8Q__",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/5.jpg?updatedAt=1743174841139",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
   },
   {
-    place: "Cappadocia - Turkey",
-    title: "GÖREME",
-    title2: "VALLEY",
+    place: "",
+    title: "BGMI",
+    title2: "",
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-    image:
-      "https://media-hosting.imagekit.io//fac8b7a25ff74ae6/11.jpg?Expires=1837356181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=v2OcU18mu-T4-CEm2QhIrqr~fzsWIMx9B5s1G6cBAXhdWu7XMWEMpqmAQaXtGrWzdohrHmZo3q0EOfEQNNjB1c9z1rm6laHWTLp7SVq1AiLb0oDhkq5C~ErTNfh~LviUelHGkqbtc~NDeP~xIAm9ezmRyNwaYIlSzdViAJK9AQxxY3eDVHxFsntwySwV8F2PV8-ZmXryseVwhFEdRpMvnqU9vvD-a5v9MPyEH5aDzBVMgKyELLTvvCSRUJgQd3XX~MqoLmGEF~zsZuGjUrE9CwXMwBQWHruClFzb1G9OZZ1Fp5FcE0QvtidXADN63RSBwCog02cwIzzChO-8OHdtLw__",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/6.jpg?updatedAt=1743174841584",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/bgmi1.webp?updatedAt=1743177036284",
+  },
+  {
+    place: "",
+    title: "DIGITAL",
+    title2: "PING PONG",
+    description:
+      "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
+  },
+  {
+    place: "",
+    title: "SCARY",
+    title2: "HOUSE",
+    description:
+      "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/8.jpg?updatedAt=1743174848349",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/scary1.png?updatedAt=1743177036759",
+  },
+  {
+    place: "",
+    title: "MINI",
+    title2: "GOLF",
+    description:
+      "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/9.jpg?updatedAt=1743174847891",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/golf.avif?updatedAt=1743177036400",
+  },
+  {
+    place: "",
+    title: "EXTRACTION",
+    title2: "",
+    description:
+      "Oia, a picturesque village on the island of Santorini, is renowned for its whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea. Its romantic ambiance and stunning vistas make it a sought-after destination for travelers worldwide.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/10.jpg?updatedAt=1743174848397",
+    bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/extract1.jpg?updatedAt=1743177034835",
+  },
+  {
+    place: "",
+    title: "BINARY BOUNTY",
+    title2: "HUNT",
+    description:
+      "Lake Louise, located in Banff National Park, is a pristine alpine lake known for its turquoise waters, surrounded by towering mountains and glaciers. It's a haven for outdoor enthusiasts, offering activities such as hiking, canoeing, and ice skating.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/11.jpg?updatedAt=1743174848907",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/sherlock1.jpg?updatedAt=1743177035675",
+  },
+  {
+    place: "",
+    title: "PIXEL",
+    title2: "ART",
+    description:
+      "The Great Barrier Reef, the world's largest coral reef system, is a vibrant underwater ecosystem teeming with marine life. Snorkeling and diving reveal a kaleidoscope of colors and diverse species, making it a paradise for nature lovers.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
+  },
+  {
+    place: "",
+    title: "DRONE",
+    title2: "DOJO",
+    description:
+      "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/13.jpg?updatedAt=1743174841273",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/drone1.jpg?updatedAt=1743177039038",
+  },
+  {
+    place: "",
+    title: "LASER",
+    title2: "TAG",
+    description:
+      "Salar de Uyuni, the world's largest salt flat, is a vast, otherworldly expanse that creates stunning mirror-like reflections during the rainy season. Its surreal beauty and unique geological formations make it a photographer's dream.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+  },
+  {
+    place: "",
+    title: "",
+    title2: "",
+    description:
+      "Reykjavik, the capital of Iceland, is a vibrant city known for its colorful buildings, geothermal spas, and proximity to natural wonders like the Blue Lagoon and the Northern Lights. It's a gateway to Iceland's stunning landscapes and unique cultural experiences.",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
   },
 ];
 
@@ -403,21 +483,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
 
     loadImages();
   }, []);
-  useEffect(() => {
-    let intervalId: ReturnType<typeof setInterval> | undefined;
-    const timeoutId = setTimeout(() => {
-      intervalId = setInterval(() => {
-        if (clicks.current === 0) {
-          step('next');
-        }
-      },3000);
-    }, 3000);
   
-    return () => {
-      clearTimeout(timeoutId);
-      if (intervalId) clearInterval(intervalId);
-    };
-  }, []);
  
 
   return (

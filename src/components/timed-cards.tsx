@@ -5,139 +5,139 @@ import { gsap } from "gsap";
 
 const data = [
   {
-    place: "Switzerland Alps",
-    title: "SAINT",
-    title2: "ANTONIEN",
+    place: "",
+    title: "PAPER",
+    title2: "AND POSTER",
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-    image: "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
-    bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/1.jpg?updatedAt=1743098579168",
+    image: "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
+    bimage : "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
   },
   {
-    place: "Japan Alps",
-    title: "NAGANO",
-    title2: "PREFECTURE",
+    place: "",
+    title: "WEBATHON",
+    title2: "",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-      image: "https://ik.imagekit.io/tmdgdnv8a/posters/1.jpg?updatedAt=1743098579168",
-      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/2.jpg?updatedAt=1743174841409",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
   },
   {
-    place: "Sahara Desert - Morocco",
-    title: "MARRAKECH",
-    title2: "MEROUGA",
+    place: "",
+    title: "PROJECT",
+    title2: "EXPO",
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-      image: "https://i.ibb.co/nNR07QNH/3.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/3.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/3.jpg?updatedAt=1743174841415",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
   },
   {
-    place: "Sierra Nevada - USA",
-    title: "YOSEMITE",
-    title2: "NATIONAL PARK",
+    place: "",
+    title: "PHOTOGRAPHY",
+    title2: "CHALLENGE",
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-      image: "https://i.ibb.co/nNR07QNH/4.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/4.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/4.jpg?updatedAt=1743174841419",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
   },
   {
-    place: "Tarifa - Spain",
-    title: "LOS LANCES",
-    title2: "BEACH",
+    place: "",
+    title: "IPL",
+    title2: "AUCTION",
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-      image: "https://i.ibb.co/nNR07QNH/5.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/5.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/5.jpg?updatedAt=1743174841139",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
   },
   {
-    place: "Cappadocia - Turkey",
-    title: "GÖREME",
-    title2: "VALLEY",
+    place: "",
+    title: "BGMI",
+    title2: "",
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-      image: "https://i.ibb.co/nNR07QNH/6.jpg",
-      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/6.jpg?updatedAt=1743174841584",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/bgmi1.webp?updatedAt=1743177036284",
   },
   {
-    place: "Kyoto - Japan",
-    title: "FUSHIMI",
-    title2: "INARI",
+    place: "",
+    title: "DIGITAL",
+    title2: "PING PONG",
     description:
       "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
-      image: "https://i.ibb.co/nNR07QNH/7.jpg",
-      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
   },
   {
-    place: "Bora Bora - French",
-    title: "BORA",
-    title2: "BORA",
+    place: "",
+    title: "SCARY",
+    title2: "HOUSE",
     description:
       "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
-      image: "https://i.ibb.co/nNR07QNH/8.jpg",
-      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/8.jpg?updatedAt=1743174848349",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/scary1.png?updatedAt=1743177036759",
   },
   {
-    place: "Machu Picchu - Peru",
-    title: "MACHU",
-    title2: "PICCHU",
+    place: "",
+    title: "MINI",
+    title2: "GOLF",
     description:
       "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
-      image: "https://i.ibb.co/nNR07QNH/9.jpg",
-      bimage : "https://ik.imagekit.io/tmdgdnv8a/posters/3.jpg?updatedAt=1743098579276",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/9.jpg?updatedAt=1743174847891",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/golf.avif?updatedAt=1743177036400",
   },
   {
-    place: "Santorini - Greece",
-    title: "OIA",
-    title2: "VILLAGE",
+    place: "",
+    title: "EXTRACTION",
+    title2: "",
     description:
       "Oia, a picturesque village on the island of Santorini, is renowned for its whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea. Its romantic ambiance and stunning vistas make it a sought-after destination for travelers worldwide.",
-      image: "https://i.ibb.co/nNR07QNH/10.jpg",
-    bimage : "https://i.ibb.co/nNR07QNH/10.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/10.jpg?updatedAt=1743174848397",
+    bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/extract1.jpg?updatedAt=1743177034835",
   },
   {
-    place: "Banff - Canada",
-    title: "LAKE",
-    title2: "LOUISE",
+    place: "",
+    title: "BINARY BOUNTY",
+    title2: "HUNT",
     description:
       "Lake Louise, located in Banff National Park, is a pristine alpine lake known for its turquoise waters, surrounded by towering mountains and glaciers. It's a haven for outdoor enthusiasts, offering activities such as hiking, canoeing, and ice skating.",
-      image: "https://i.ibb.co/nNR07QNH/11.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/11.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/11.jpg?updatedAt=1743174848907",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/sherlock1.jpg?updatedAt=1743177035675",
   },
   {
-    place: "Great Barrier Reef - Australia",
-    title: "GREAT",
-    title2: "REEF",
+    place: "",
+    title: "PIXEL",
+    title2: "ART",
     description:
       "The Great Barrier Reef, the world's largest coral reef system, is a vibrant underwater ecosystem teeming with marine life. Snorkeling and diving reveal a kaleidoscope of colors and diverse species, making it a paradise for nature lovers.",
-      image: "https://i.ibb.co/nNR07QNH/12.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/12.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
   },
   {
-    place: "Zhangjiajie - China",
-    title: "AVATAR",
-    title2: "MOUNTAINS",
+    place: "",
+    title: "DRONE",
+    title2: "DOJO",
     description:
       "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
-      image: "https://i.ibb.co/nNR07QNH/13.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/13.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/13.jpg?updatedAt=1743174841273",
+      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/drone1.jpg?updatedAt=1743177039038",
   },
   {
-    place: "Salar de Uyuni - Bolivia",
-    title: "SALAR",
-    title2: "UYUNI",
+    place: "",
+    title: "LASER",
+    title2: "TAG",
     description:
       "Salar de Uyuni, the world's largest salt flat, is a vast, otherworldly expanse that creates stunning mirror-like reflections during the rainy season. Its surreal beauty and unique geological formations make it a photographer's dream.",
-      image: "https://i.ibb.co/nNR07QNH/14.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/14.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
   },
   {
-    place: "Iceland",
-    title: "REYKJAVIK",
-    title2: "CAPITAL",
+    place: "",
+    title: "",
+    title2: "",
     description:
       "Reykjavik, the capital of Iceland, is a vibrant city known for its colorful buildings, geothermal spas, and proximity to natural wonders like the Blue Lagoon and the Northern Lights. It's a gateway to Iceland's stunning landscapes and unique cultural experiences.",
-      image: "https://i.ibb.co/nNR07QNH/15.jpg",
-      bimage : "https://i.ibb.co/nNR07QNH/15.jpg",
+      image: "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
+      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
   },
 ];
 
@@ -249,7 +249,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
   const activeCardOverlay = document.querySelector(`${getCard(active)} > div`);
   if (activeCardOverlay) {
       gsap.set(activeCardOverlay, { 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${isMobile ? data[active].image : data[active].bimage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${data[active].bimage})`, // Use bimage for maximized card
           opacity: 0
       });
       gsap.to(activeCardOverlay, { opacity: 1, duration: 0.5, delay: 0.2 });
@@ -331,7 +331,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
 
           gsap.set(getCardContent(prv), {
               x: xNew,
-              y: offsetTop + cardHeight - 100,
+              y: offsetTop + cardHeight - 200,
               opacity: 1,
               zIndex: 40,
           });
@@ -564,22 +564,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
     loadImages();
   }, []);
 
-  // Update the useEffect for autoplay to use the ref
-  useEffect(() => {
-    autoplayRef.current.timeoutId = setTimeout(() => {
-      autoplayRef.current.intervalId = setInterval(() => {
-        if (clicks.current === 0) {
-          step('next');
-        }
-      }, 3000);
-    }, 0);
-    
-    return () => {
-      if (autoplayRef.current.timeoutId) clearTimeout(autoplayRef.current.timeoutId);
-      if (autoplayRef.current.intervalId) clearInterval(autoplayRef.current.intervalId);
-    };
-  }, []);
-
+  
   return (
     <div className="relative h-screen overflow-hidden bg-[#1a1a1a] text-[#FFFFFFDD]">
         <div className="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
@@ -592,9 +577,10 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
                         id={`card${index}`}
                         className="card absolute left-0 top-0 transition-all duration-300 overflow-hidden"
                         style={{
-                            backgroundImage: `url(${isMobile ? item.image : item.bimage})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
+                            backgroundImage: `url(${index === order.current[0] ? item.bimage : item.image})`, // Use bimage for the active card
+                            backgroundSize: "cover", // Ensures the image covers the entire area
+                            backgroundPosition: "center", // Centers the image
+                            backgroundRepeat: "no-repeat", // Prevents the image from repeating
                             width: index === order.current[0] ? '100%' : cardWidth,
                             height: index === order.current[0] ? '100%' : cardHeight,
                             transform: `translate(${index === order.current[0] ? 0 : offsetLeft + index * (cardWidth + gap)}px, ${index === order.current[0] ? 0 : offsetTop}px)`,
@@ -606,6 +592,9 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
                             className="absolute inset-0 transition-opacity duration-500"
                             style={{
                                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat", // Prevents the gradient from repeating
                                 opacity: index === order.current[0] ? 1 : 0,
                                 filter: "brightness(0.8) contrast(1.2)"
                             }}
@@ -623,7 +612,7 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
             </div>
         </div>
 
-        <div id="details-des" className="details hidden md:block">
+        <div id="details-des" className="details hidden md:block" >
             <div id="details-even" className="details">
                 <div className="place-box h-[46px] overflow-hidden">
                     <div className="text pt-4 text-xl relative before:absolute before:top-0 before:left-0 before:w-[30px] before:h-1 before:rounded-full before:bg-white">

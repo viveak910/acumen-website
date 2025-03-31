@@ -1,65 +1,41 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const teamMembers = {
-  coordinators: [
-    {
-      name: "Sarah Johnson",
-      role: "Event Coordinator",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&q=80",
-      description: "10+ years of experience in event management and coordination",
-    },
-    {
-      name: "Michael Chen",
-      role: "Technical Coordinator",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&q=80",
-      description: "Expert in technical planning and execution of large-scale events",
-    },
-  ],
-  acumenTeam: [
-    {
-      name: "Emily Rodriguez",
-      role: "Strategy Director",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&q=80",
-      description: "Leads strategic planning and business development",
-    },
-    {
-      name: "David Kim",
-      role: "Analytics Lead",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&q=80",
-      description: "Specializes in data analysis and performance optimization",
-    },
-    {
-      name: "Lisa Wang",
-      role: "Innovation Manager",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&q=80",
-      description: "Drives innovation and new technology initiatives",
-    },
-  ],
-};
-
-type Category = "all" | "coordinators" | "acumenTeam";
+const teamMembers = [
+  {
+    name: "Sarah Johnson",
+    role: "Event Coordinator",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&q=80",
+    description: "10+ years of experience in event management and coordination",
+  },
+  {
+    name: "Michael Chen",
+    role: "Technical Coordinator",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&q=80",
+    description: "Expert in technical planning and execution of large-scale events",
+  },
+  {
+    name: "Emily Rodriguez",
+    role: "Strategy Director",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&q=80",
+    description: "Leads strategic planning and business development",
+  },
+  {
+    name: "David Kim",
+    role: "Analytics Lead",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&q=80",
+    description: "Specializes in data analysis and performance optimization",
+  },
+  {
+    name: "Lisa Wang",
+    role: "Innovation Manager",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&q=80",
+    description: "Drives innovation and new technology initiatives",
+  },
+];
 
 export function Team() {
-  const [activeCategory, setActiveCategory] = useState<Category>("all");
-  const [selectedMember, setSelectedMember] = useState<string | null>(null);
-
-  // Update active category
-  const handleCategoryChange = (category: Category) => {
-    setActiveCategory(category);
-    setSelectedMember(null);
-  };
-
-  // Filter members
-  const getFilteredMembers = () => {
-    if (activeCategory === "all") {
-      return [...teamMembers.coordinators, ...teamMembers.acumenTeam];
-    } else if (activeCategory === "coordinators") {
-      return teamMembers.coordinators;
-    } else {
-      return teamMembers.acumenTeam;
-    }
-  };
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 py-24 px-8">
@@ -77,70 +53,20 @@ export function Team() {
           </p>
         </motion.div>
 
-        {/* Category Selector */}
-        <motion.div
-          className="flex justify-center mb-16 space-x-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          <CategoryButton
-            label="All"
-            isActive={activeCategory === "all"}
-            onClick={() => handleCategoryChange("all")}
-          />
-          <CategoryButton
-            label="Coordinators"
-            isActive={activeCategory === "coordinators"}
-            onClick={() => handleCategoryChange("coordinators")}
-          />
-          <CategoryButton
-            label="Acumen Team"
-            isActive={activeCategory === "acumenTeam"}
-            onClick={() => handleCategoryChange("acumenTeam")}
-          />
-        </motion.div>
-
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {getFilteredMembers().map((member, index) => (
+          {teamMembers.map((member, index) => (
             <TeamMember
               key={member.name}
               member={member}
               index={index}
-              isSelected={selectedMember === member.name}
-              onClick={() =>
-                setSelectedMember(selectedMember === member.name ? null : member.name)
-              }
+              isSelected={selectedIndex === index}
+              onClick={() => setSelectedIndex(selectedIndex === index ? null : index)}
             />
           ))}
         </div>
       </div>
     </div>
-  );
-}
-
-function CategoryButton({
-  label,
-  isActive,
-  onClick,
-}: {
-  label: string;
-  isActive: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <motion.button
-      className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-        isActive
-          ? "bg-indigo-600 text-white"
-          : "bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-gray-200"
-      }`}
-      onClick={onClick}
-      whileTap={{ scale: 0.97 }}
-    >
-      {label}
-    </motion.button>
   );
 }
 
@@ -193,10 +119,7 @@ function TeamMember({
       {/* Expandable description */}
       <motion.div
         initial={{ height: 0, opacity: 0 }}
-        animate={{
-          height: isSelected ? "auto" : 0,
-          opacity: isSelected ? 1 : 0,
-        }}
+        animate={{ height: isSelected ? "auto" : 0, opacity: isSelected ? 1 : 0 }}
         transition={{ duration: 0.3 }}
         className="overflow-hidden"
       >

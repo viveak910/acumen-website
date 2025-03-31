@@ -3,35 +3,87 @@ import { motion } from "framer-motion";
 const events = [
   {
     id: 1,
-    title: "Global Tech Summit 2025",
-    date: "March 15-17, 2025",
-    location: "Singapore",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-    description: "Join industry leaders and innovators at the biggest tech conference in Asia"
+    title: "Paper and Poster Presentation",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/paper1.jpg?updatedAt=1743339388886"
   },
   {
     id: 2,
-    title: "Eco Innovation Forum",
-    date: "April 5-7, 2025",
-    location: "Stockholm",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
-    description: "Exploring sustainable solutions for a greener future"
+    title: "Webathon",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/web1.jpg?updatedAt=1743339389220"
   },
   {
     id: 3,
-    title: "Digital Marketing Excellence",
-    date: "May 20-22, 2025",
-    location: "New York",
-    image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&q=80",
-    description: "Master the latest digital marketing strategies and tools"
+    title: "Project Expo",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/projexp1.webp?updatedAt=1743339389342"
   },
   {
     id: 4,
-    title: "AI & Machine Learning Conference",
-    date: "June 10-12, 2025",
-    location: "London",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
-    description: "Discover the future of artificial intelligence and machine learning"
+    title: "Photography Challenge",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/photo1.jpg?updatedAt=1743339389340"
+  },
+  {
+    id: 5,
+    title: "IPL Auction",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/ipl1.jpg?updatedAt=1743339389333"
+  },
+  {
+    id: 6,
+    title: "BGMI Tournament",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/bgmi1.webp?updatedAt=1743339389545"
+  },
+  {
+    id: 7,
+    title: "Digital Ping Pong",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074"
+  },
+  {
+    id: 8,
+    title: "Scary House",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/scary1.png?updatedAt=1743339389559"
+  },
+  {
+    id: 9,
+    title: "Mini Golf",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/golf.avif?updatedAt=1743339389184"
+  },
+  {
+    id: 10,
+    title: "Capture The Flag",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/extract1.jpg?updatedAt=1743339389224"
+  },
+  {
+    id: 11,
+    title: "Binary Bounty Hunt",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/sherlock1.jpg?updatedAt=1743339389549"
+  },
+  {
+    id: 12,
+    title: "Pixel Art",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235"
+  },
+  {
+    id: 13,
+    title: "Drone Dojo",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/register%20page/drone1.jpg?updatedAt=1743339393130"
+  },
+  {
+    id: 14,
+    title: "Laser Tag",
+    location: "Vasavi College of Engineering",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245"
   }
 ];
 
@@ -68,7 +120,6 @@ export function Events() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                    <p className="text-[#ecad29]">{event.date}</p>
                     <p className="text-gray-300">{event.location}</p>
                   </div>
                   <motion.button
@@ -79,9 +130,6 @@ export function Events() {
                     Register
                   </motion.button>
                 </div>
-                <p className="text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {event.description}
-                </p>
               </div>
             </motion.div>
           ))}
