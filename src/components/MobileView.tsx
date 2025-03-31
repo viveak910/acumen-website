@@ -144,7 +144,7 @@ const data = [
 
 export function MobileView() {
     const containerRef = useRef<HTMLDivElement>(null);
-  let order = useRef([0, 1, 2, 3, 4, 5]);
+  let order = useRef([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
   let detailsEven = useRef(true);
   let clicks = useRef(0);
 
