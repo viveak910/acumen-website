@@ -73,12 +73,12 @@ const coordinators = [
   },
   {
     name: "Viveak",
-    role: "Developers Lead",
+    role: "Developer",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2018.27.12_5725ed88.jpg?updatedAt=1743601417226"
   },
   {
     name: "Vibhas",
-    role: "Developers Lead",
+    role: "Developer",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2019.13.07_53f47c20.jpg?updatedAt=1743601417348"
   }
 ];
