@@ -10,39 +10,40 @@ const coordinators = [
   {
     name: "Dr.K.Ram Mohan Rao",
     role: "HOD, IT",
-    image: "https://ik.imagekit.io/tmdgdnv8a/HOD.jpg?updatedAt=1743606869292",
-    },
-    {
+    image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743607901543",
+  },
+  {
     name: "Aruna",
     role: "Faculty Coordinator",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743606873421"
-  },{
+  },
+  {
     name: "Mr. Srinivas Chakravarthy",
     role: "Faculty Coordinator",
     image: "https://ik.imagekit.io/tmdgdnv8a/Srinivas%20Chakravarthy.jpg?updatedAt=1743606868807"
-  },{
-    name: "Mr. NELATURI DAVID RAJU",
-    role: "Faculty Coordinator",
-    image: "https://ik.imagekit.io/tmdgdnv8a/David%20Raju.jpeg?updatedAt=1743606870159"
   },
   {
     name: "Shahnawaz",
-    role: "Overall Acumen Coordinator",
-    image: "https://ik.imagekit.io/tmdgdnv8a/shahnawaz.jpg?updatedAt=1743606873427"
+    role: "Overall Acumen IT Coordinator and Head of Logistics",
+    image: "https://ik.imagekit.io/tmdgdnv8a/shahnawaz.jpg?updatedAt=1743606873427",
+    role2 : "Head of Logistics"
   },
   {
     name: "Manoj Aripaka",
     role: "Overall Coordinator",
+    role2: "Head of Design and Technology",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2018.26.40_18255732.jpg?updatedAt=1743601417728"
   },
   {
     name: "Phani Meghana",
     role: "Overall Coordinator",
+    role2: "Head of Marketing and Logistics",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/PHANI%20MEGHANA_.jpg?updatedAt=1743601422526"
   },
   {
     name: "Srinithi",
-    role: "Content Strategist",
+    role: "Overall Coordinator",
+    role2: "Head of Marketing and Logistics",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/srinithi.png?updatedAt=1743601417737"
   },
   {
@@ -56,16 +57,20 @@ const coordinators = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Vaishnavi.jpg?updatedAt=1743601422296"
   },
   {
+    name: "Saakshi",
+    role: "Marketing Coordinator",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Saakshi.jpg?updatedAt=1743601421341"
+  },
+  {
     name: "Sharath",
     role: "Logistics Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Sharath.jpg?updatedAt=1743601417941"
   },
   {
-    name: "Saakshi",
-    role: "Marketing Coordinator",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Saakshi.jpg?updatedAt=1743601421341"
+    name: "Jai Chandra",
+    role: "Technology Lead",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Jai%20Chandra%20.jpeg?updatedAt=1743601417588"
   },
-  
   {
     name: "Viveak",
     role: "Developers Lead",
@@ -75,11 +80,6 @@ const coordinators = [
     name: "Vibhas",
     role: "Developers Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2019.13.07_53f47c20.jpg?updatedAt=1743601417348"
-  },
-  {
-    name: "Jai Chandra",
-    role: "Technology Lead",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Jai%20Chandra%20.jpeg?updatedAt=1743601417588"
   }
 ];
 
@@ -211,7 +211,8 @@ function App() {
                   </div>
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-white mb-2">{coordinator.name}</h3>
-                    <p className="text-green-400 mb-4">{coordinator.role}</p>
+                    <p className="text-green-400 mb-2">{coordinator.role}</p>
+                    {coordinator.role2 && <p className="text-green-400">{coordinator.role2}</p>}
                   </div>
                 </div>
               ))}
