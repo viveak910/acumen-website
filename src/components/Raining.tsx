@@ -24,7 +24,7 @@ const coordinators = [
   },
   {
     name: "Shahnawaz",
-    role: "Overall Acumen IT Coordinator and Head of Logistics",
+    role: "Overall Acumen IT Coordinator ",
     image: "https://ik.imagekit.io/tmdgdnv8a/shahnawaz.jpg?updatedAt=1743606873427",
     role2 : "Head of Logistics"
   },
@@ -58,7 +58,7 @@ const coordinators = [
   },
   {
     name: "Saakshi",
-    role: "Marketing Coordinator",
+    role: "Marketing Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Saakshi.jpg?updatedAt=1743601421341"
   },
   {
