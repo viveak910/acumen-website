@@ -3,48 +3,82 @@ import Rainingl from './Rainingl';
 
 const coordinators = [
   {
-    name: "John Doe",
-    role: "Technical Coordinator",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
-    linkedin: "#",
-    github: "#"
+    name: "Manoj Aripaka",
+    role: "Overall Coordinator",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2018.26.40_18255732.jpg?updatedAt=1743601417728"
   },
   {
-    name: "Jane Smith",
+    name: "Phani Meghana",
     role: "Event Coordinator",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces",
-    linkedin: "#",
-    github: "#"
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/PHANI%20MEGHANA_.jpg?updatedAt=1743601422526"
   },
   {
-    name: "Alex Johnson",
+    name: "Vaishnavi Cheruku",
     role: "Marketing Coordinator",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces",
-    linkedin: "#",
-    github: "#"
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Vaishnavi.jpg?updatedAt=1743601422296"
+  },
+  {
+    name: "Sharath",
+    role: "Design Lead",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Sharath.jpg?updatedAt=1743601417941"
+  },
+  {
+    name: "Saakshi",
+    role: "Marketing Coordinator",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Saakshi.jpg?updatedAt=1743601421341"
+  },
+  {
+    name: "Srinithi",
+    role: "Content Strategist",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/srinithi.png?updatedAt=1743601417737"
+  },
+  {
+    name: "Viveak",
+    role: "Website Developer",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2018.27.12_5725ed88.jpg?updatedAt=1743601417226"
+  },
+  {
+    name: "Vibhas",
+    role: "Website Developer",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2019.13.07_53f47c20.jpg?updatedAt=1743601417348"
+  },
+  {
+    name: "Jai Chandra",
+    role: "Logistics Coordinator",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Jai%20Chandra%20.jpeg?updatedAt=1743601417588"
   }
 ];
 
 const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=800&fit=crop",
-    title: "Coding Workshop",
-    description: "Hands-on learning experience with industry experts"
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/IMG_2302.HEIC?updatedAt=1743601009557",
+    title: "",
+    description: ""
   },
   {
-    url: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop",
-    title: "Tech Exhibition",
-    description: "Showcasing cutting-edge technology and innovations"
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/2.jpg?updatedAt=1743601009852",
+    title: "",
+    description: ""
   },
   {
-    url: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&h=800&fit=crop",
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/4.jpg?updatedAt=1743601008663",
     title: "Innovation Lab",
     description: "Where ideas transform into reality"
   },
   {
-    url: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&h=800&fit=crop",
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/3%20(1).jpg?updatedAt=1743602735020",
     title: "Robotics Competition",
     description: "Pushing the boundaries of automation"
+  },
+  {
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/5.jpg?updatedAt=1743601010000",
+    title: "Team Collaboration",
+    description: "Working together to achieve greatness"
+  },
+  {
+    url: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Gallery/6.jpg?updatedAt=1743601010100",
+    title: "Award Ceremony",
+    description: "Celebrating success and achievements"
   }
 ];
 
@@ -89,8 +123,7 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="text-3xl font-bold text-white mb-2">{image.title}</h3>
-                    <p className="text-green-400 mb-4">{image.description}</p>
+                    
                     <div className="w-full h-1 bg-green-400/30 rounded-full overflow-hidden">
                       <div
                         className="h-full bg-green-400 transition-all duration-[5000ms] ease-linear"

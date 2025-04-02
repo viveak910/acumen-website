@@ -10,7 +10,7 @@ const data = [
     title2: "AND POSTER",
     description:
       "Step into the spotlight and make your ideas stand out! Just like a visionary in a crowd, let your research, analysis, and creativity shine through. Whether it's groundbreaking concepts or innovative solutions, seize this opportunity to showcase your intellect and leave a mark at Acumen 2025!",
-    image : "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
+    image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/6.png?updatedAt=1743600311501",
   },
   {
     place: "",
@@ -18,7 +18,7 @@ const data = [
     title2: "",
     description:
       "Code. Create. Conquer. Step into the digital battleground and craft stunning websites that stand out in the online world. Whether it's functionality, aesthetics, or innovation—bring your best to the table and prove your web development prowess at Acumen 2025!",
-      image : "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/11.png?updatedAt=1743600307720",
   },
   {
     place: "",
@@ -26,7 +26,7 @@ const data = [
     title2: "EXPO",
     description:
       "Innovate. Exhibit. Inspire! Present your groundbreaking projects, showcase your creativity, and bring ideas to life. Whether it's tech-driven solutions or revolutionary concepts, let your innovation shine and compete for the title of the best project at Acumen 2025!",
-      image : "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/8.png?updatedAt=1743600312792",
   },
   {
     place: "",
@@ -34,7 +34,7 @@ const data = [
     title2: "CHALLENGE",
     description:
       "Unleash your creativity in the Photography Challenge at Acumen 2025! Channel the passion of Farhan Qureshi from 3 Idiots as you capture moments that speak louder than words. Whether it's landscapes or candid shots, let your lens tell a story and showcase your artistic vision!",
-      image : "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/7.png?updatedAt=1743600313911",
   },
   {
     place: "",
@@ -42,7 +42,7 @@ const data = [
     title2: "AUCTION",
     description:
       "Step into the electrifying world of cricket strategy with the Mock IPL Auction at Acumen 2025! Experience the thrill of bidding wars, team-building, and player selection as you manage budgets and assemble your dream squad. Channel your inner franchise owner and compete to create the ultimate lineup!",
-      image : "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/s8perst_ipl-mega-auction-2025-bcci_625x300_25_November_24.webp?updatedAt=1743601946192",
   },
   {
     place: "",
@@ -82,7 +82,7 @@ const data = [
     title2: "",
     description:
       "Join us for Extraction: Capture the Flag at Acumen 2025, where you'll navigate high-stakes challenges inspired by the thrilling action of the movie. Strategize and infiltrate to secure the flag, all while evoking the adrenaline of intense chases and daring rescues. Assemble your team and get ready for an unforgettable mission!",
-    image : "https://ik.imagekit.io/k42ezweav/AcumenBG/extract1.jpg?updatedAt=1743177034835",
+    image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/2.jpg?updatedAt=1743600494537",
   },
   {
     place: "",
@@ -90,7 +90,7 @@ const data = [
     title2: "HUNT",
     description:
       "Crack the code, chase the clues, and uncover the hidden web! Dive into a thrilling digital puzzle challenge where each decoded clue unlocks the next level. Think fast, solve smart, and race to be the ultimate bounty hunter at Acumen 2025!",
-      image : "https://ik.imagekit.io/k42ezweav/AcumenBG/sherlock1.jpg?updatedAt=1743177035675",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/10.jpg?updatedAt=1743600476477",
   },
   {
     place: "",
@@ -122,7 +122,7 @@ const data = [
     title2: "",
     description:
       "Embark on a thrilling virtual adventure with GeoGuessr at Acumen 2025! Test your geographical knowledge and detective skills as you navigate through random locations on Google Street View, guessing where you are in the world. Compete against friends and fellow explorers to score points based on accuracy and speed. Let's see how far your intuition and observation can take you!",
-      image : "",
+      image : "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Events/Geoguessr-feat-image-2.jpg?updatedAt=1743602106023",
   },
   {
     place: "",
@@ -157,6 +157,7 @@ const data = [
       image : "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
   },
 ];
+
 
 export function TimedCards() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -546,24 +547,14 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
           <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
             <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
           </div>
-          <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
+          <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base font-extrabold text-gray-900 dark:text-gray-100">
+  {data[0].description}
+</div>
+
           <div className="cta mt-6 flex items-center md:w-[500px] w-full">
-            <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+            
             <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
-              Discover Location
+              Register
             </button>
           </div>
         </div>
@@ -581,24 +572,13 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
   <div className="title-box-2 mt-0.5 h-[100px] overflow-hidden">
     <div className="title-2 font-oswald md:text-[72px] text-[42px] font-semibold">{data[0].title2}</div>
   </div>
-  <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base">{data[0].description}</div>
+  <div className="desc mt-4 md:w-[500px] w-full text-sm md:text-base font-extrabold text-gray-900 dark:text-gray-100">
+  {data[0].description}
+</div>
+
   <div className="cta mt-6 flex items-center md:w-[500px] w-full">
-    <button className="bookmark grid place-items-center w-9 h-9 rounded-full bg-[#ecad29] text-white border-none">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-5 h-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </button>
     <button className="discover ml-4 px-6 h-9 rounded-full border border-white bg-transparent text-white text-xs uppercase">
-      Discover Location
+      Register
     </button>
   </div>
 </div>
