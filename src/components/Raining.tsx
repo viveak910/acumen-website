@@ -3,7 +3,7 @@ import Rainingl from './Rainingl';
 
 const coordinators = [
   {
-    name: "S. V. Ramana",
+    name: "Dr. S. V. Ramana",
     role: "Principal",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.14.jpeg?updatedAt=1743606872861"
   },
@@ -13,7 +13,7 @@ const coordinators = [
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743607901543",
   },
   {
-    name: "Aruna",
+    name: "Dr. S. Aruna",
     role: "Faculty Coordinator",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743606873421"
   },
@@ -25,7 +25,7 @@ const coordinators = [
   {
     name: "Shahnawaz",
     role: "Overall Acumen IT Coordinator ",
-    image: "https://ik.imagekit.io/tmdgdnv8a/shahnawaz.jpg?updatedAt=1743606873427",
+    image: "https://media-hosting.imagekit.io/eeae518d2ea7481c/WhatsApp%20Image%202025-04-03%20at%2022.44.14_8df02570.jpg?Expires=1838308506&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=S544YlvpswI6ttik2hkhPbIQE9V6Saaxsqw0rqmHIqCJ~uEOFsDBwOlG65xT0qmCTfWDoyWUI2xZ2pmevATJEWvpaok~aY6t2gVgeK5g6OCp9PBrc8S-utb9I5B8oZtImwPycwoGBG3X1eyHNnWIcp4u2~ZqueMeZ8~nFoehrugTDvwQWuMJ9X-OftLU-XgH-~RWW2xC5cLb1Xss5rBs4NBclZqEqVRGsOA7o2TaNOUcZ36Sow3hiqw~BKVNMZ5RMlwP49E-Tp623FAXtvgBEln8LBB8kIqeq7vanTBzvSW09N0UPcHYeiEhb1naUBvrwsiG9frsgsklTqHwDTUtjg__",
     role2 : "Head of Logistics"
   },
   {
@@ -48,6 +48,11 @@ const coordinators = [
   },
   {
     name: "S Bagawan Reddy",
+    role: "Overall Coordinator",
+    image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.23.55.jpeg?updatedAt=1743606872161"
+  },
+  {
+    name: "L Bhavani",
     role: "Overall Coordinator",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.23.55.jpeg?updatedAt=1743606872161"
   },
