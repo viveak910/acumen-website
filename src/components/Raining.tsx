@@ -18,11 +18,6 @@ const coordinators = [
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743606873421"
   },
   {
-    name: "Mr. Srinivas Chakravarthy",
-    role: "Faculty Coordinator",
-    image: "https://ik.imagekit.io/tmdgdnv8a/Srinivas%20Chakravarthy.jpg?updatedAt=1743606868807"
-  },
-  {
     name: "Shahnawaz",
     role: "Overall Acumen IT Coordinator ",
     image: "https://media-hosting.imagekit.io/eeae518d2ea7481c/WhatsApp%20Image%202025-04-03%20at%2022.44.14_8df02570.jpg?Expires=1838308506&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=S544YlvpswI6ttik2hkhPbIQE9V6Saaxsqw0rqmHIqCJ~uEOFsDBwOlG65xT0qmCTfWDoyWUI2xZ2pmevATJEWvpaok~aY6t2gVgeK5g6OCp9PBrc8S-utb9I5B8oZtImwPycwoGBG3X1eyHNnWIcp4u2~ZqueMeZ8~nFoehrugTDvwQWuMJ9X-OftLU-XgH-~RWW2xC5cLb1Xss5rBs4NBclZqEqVRGsOA7o2TaNOUcZ36Sow3hiqw~BKVNMZ5RMlwP49E-Tp623FAXtvgBEln8LBB8kIqeq7vanTBzvSW09N0UPcHYeiEhb1naUBvrwsiG9frsgsklTqHwDTUtjg__",
