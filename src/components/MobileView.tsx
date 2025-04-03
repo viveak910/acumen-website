@@ -12,7 +12,7 @@ const data = [
     description:
       "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
     image: "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
-    bimage : "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
+    bimage: "https://ik.imagekit.io/k42ezweav/1.jpg?updatedAt=1743174714752",
   },
   {
     place: "",
@@ -20,8 +20,8 @@ const data = [
     title2: "",
     description:
       "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/2.jpg?updatedAt=1743174841409",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/2.jpg?updatedAt=1743174841409",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/web1.jpg?updatedAt=1743177035393",
   },
   {
     place: "",
@@ -29,8 +29,8 @@ const data = [
     title2: "EXPO",
     description:
       "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/3.jpg?updatedAt=1743174841415",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/3.jpg?updatedAt=1743174841415",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
   },
   {
     place: "",
@@ -38,8 +38,8 @@ const data = [
     title2: "CHALLENGE",
     description:
       "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/4.jpg?updatedAt=1743174841419",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/4.jpg?updatedAt=1743174841419",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
   },
   {
     place: "",
@@ -47,8 +47,8 @@ const data = [
     title2: "AUCTION",
     description:
       "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/5.jpg?updatedAt=1743174841139",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/5.jpg?updatedAt=1743174841139",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
   },
   {
     place: "",
@@ -56,8 +56,8 @@ const data = [
     title2: "",
     description:
       "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/6.jpg?updatedAt=1743174841584",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/bgmi1.webp?updatedAt=1743177036284",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/6.jpg?updatedAt=1743174841584",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/bgmi1.webp?updatedAt=1743177036284",
   },
   {
     place: "",
@@ -65,8 +65,8 @@ const data = [
     title2: "PING PONG",
     description:
       "Fushimi Inari Shrine, famous for its thousands of vibrant red torii gates, winds through the wooded forest of Mount Inari. This iconic Shinto shrine is dedicated to Inari, the god of rice and prosperity, attracting visitors from all over the world.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
-      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen/7.jpg?updatedAt=1743174847074",
   },
   {
     place: "",
@@ -74,8 +74,8 @@ const data = [
     title2: "HOUSE",
     description:
       "Bora Bora, a jewel in French Polynesia, is synonymous with luxury and natural beauty. Its turquoise lagoon, overwater bungalows, and lush volcanic slopes create an idyllic setting for romance and adventure.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/8.jpg?updatedAt=1743174848349",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/scary1.png?updatedAt=1743177036759",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/8.jpg?updatedAt=1743174848349",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/scary1.png?updatedAt=1743177036759",
   },
   {
     place: "",
@@ -83,8 +83,8 @@ const data = [
     title2: "GOLF",
     description:
       "Machu Picchu, the lost city of the Incas, is an awe-inspiring archaeological site nestled high in the Andes Mountains. Its intricate stonework and stunning panoramic views offer a glimpse into the ingenuity and artistry of the Inca civilization.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/9.jpg?updatedAt=1743174847891",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/golf.avif?updatedAt=1743177036400",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/9.jpg?updatedAt=1743174847891",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/golf.avif?updatedAt=1743177036400",
   },
   {
     place: "",
@@ -92,8 +92,8 @@ const data = [
     title2: "",
     description:
       "Oia, a picturesque village on the island of Santorini, is renowned for its whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea. Its romantic ambiance and stunning vistas make it a sought-after destination for travelers worldwide.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/10.jpg?updatedAt=1743174848397",
-    bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/extract1.jpg?updatedAt=1743177034835",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/10.jpg?updatedAt=1743174848397",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/extract1.jpg?updatedAt=1743177034835",
   },
   {
     place: "",
@@ -101,8 +101,8 @@ const data = [
     title2: "HUNT",
     description:
       "Lake Louise, located in Banff National Park, is a pristine alpine lake known for its turquoise waters, surrounded by towering mountains and glaciers. It's a haven for outdoor enthusiasts, offering activities such as hiking, canoeing, and ice skating.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/11.jpg?updatedAt=1743174848907",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/sherlock1.jpg?updatedAt=1743177035675",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/11.jpg?updatedAt=1743174848907",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/sherlock1.jpg?updatedAt=1743177035675",
   },
   {
     place: "",
@@ -110,8 +110,8 @@ const data = [
     title2: "ART",
     description:
       "The Great Barrier Reef, the world's largest coral reef system, is a vibrant underwater ecosystem teeming with marine life. Snorkeling and diving reveal a kaleidoscope of colors and diverse species, making it a paradise for nature lovers.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
-      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen/12.jpg?updatedAt=1743174839235",
   },
   {
     place: "",
@@ -119,26 +119,79 @@ const data = [
     title2: "DOJO",
     description:
       "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/13.jpg?updatedAt=1743174841273",
-      bimage : "https://ik.imagekit.io/k42ezweav/AcumenBG/drone1.jpg?updatedAt=1743177039038",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/13.jpg?updatedAt=1743174841273",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/drone1.jpg?updatedAt=1743177039038",
   },
   {
     place: "",
-    title: "LASER",
+    title: "NERF",
     title2: "TAG",
     description:
       "Salar de Uyuni, the world's largest salt flat, is a vast, otherworldly expanse that creates stunning mirror-like reflections during the rainy season. Its surreal beauty and unique geological formations make it a photographer's dream.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
-      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen/14.jpg?updatedAt=1743174841245",
+  },
+  {
+    place: "",
+    title: "AGENTS",
+    title2: "TALE",
+    description:
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/14.png?updatedAt=1743699431936",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/14.png?updatedAt=1743699431936",
+  },
+  {
+    place: "",
+    title: "VR",
+    title2: "ZONE",
+    description:
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/15.png?updatedAt=1743699432592",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/15.png?updatedAt=1743699432592",
+  },
+  {
+    place: "",
+    title: "WHISPER",
+    title2: "CHALLENGE",
+    description:
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/16.png?updatedAt=1743699432416",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/16.png?updatedAt=1743699432416",
+  },
+  {
+    place: "",
+    title: "GEO",
+    title2: "GUESSR",
+    description:
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/17.png?updatedAt=1743699429416",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/17.png?updatedAt=1743699429416",
+  },
+  {
+    place: "",
+    title: "CONSOLE",
+    title2: "CONVERGENCE",
+    description:
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/18.png?updatedAt=1743699433118",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/18.png?updatedAt=1743699433118",
+  },
+  {
+    place: "",
+    title: "CARNIVAL",
+    title2: "GAMES",
+    description:"",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/19.png?updatedAt=1743699417471",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/19.png?updatedAt=1743699417471",
   },
   {
     place: "",
     title: "",
     title2: "",
     description:
-      "Reykjavik, the capital of Iceland, is a vibrant city known for its colorful buildings, geothermal spas, and proximity to natural wonders like the Blue Lagoon and the Northern Lights. It's a gateway to Iceland's stunning landscapes and unique cultural experiences.",
-      image: "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
-      bimage : "https://ik.imagekit.io/k42ezweav/Acumen/15.jpg?updatedAt=1743174839560",
+      "",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/21.png?updatedAt=1743699405818",
+    bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/21.png?updatedAt=1743699405818",
   },
 ];
 
@@ -641,3 +694,6 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
     </div>
   );
 }
+
+
+

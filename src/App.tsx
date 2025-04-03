@@ -6,6 +6,7 @@ import { Team } from "./pages/Team";
 import { Events } from "./pages/Events";
 import { useDeviceDetect } from "./useDeviceDetect";
 import Main from "./components/Main";
+import RegistrationForm from "./components/RegistrationForm";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Main/>} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={isMobile? <MobileView/>:<TimedCards />} />
+          <Route path="/register" element={<RegistrationForm/>} />
         </Routes>
       </div>
     </Router>
