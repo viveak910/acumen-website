@@ -49,7 +49,7 @@ const coordinators = [
   {
     name: "L Bhavani",
     role: "Overall Coordinator",
-    image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.23.55.jpeg?updatedAt=1743606872161"
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Bhavani.jpg?updatedAt=1743749477512"
   },
   {
     name: "Vaishnavi Cheruku",
@@ -79,7 +79,7 @@ const coordinators = [
   {
     name: "Vibhas",
     role: "Developer",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/WhatsApp%20Image%202025-04-02%20at%2019.13.07_53f47c20.jpg?updatedAt=1743601417348"
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Vibhas.jpg?updatedAt=1743749495944"
   }
 ];
 
