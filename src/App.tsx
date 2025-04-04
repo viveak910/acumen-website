@@ -7,10 +7,15 @@ import { Events } from "./pages/Events";
 import { useDeviceDetect } from "./useDeviceDetect";
 import Main from "./components/Main";
 import RegistrationForm from "./components/RegistrationForm";
+import { useEffect } from "react";
 
 
 function App() {
   const isMobile = useDeviceDetect();
+  useEffect(() => {
+    document.title = "ACUMEN-IT"; // ✅ Set correct title
+
+  }, []);
 
   return (
     <Router>
