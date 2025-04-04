@@ -197,7 +197,7 @@ const data = [
 
 export function MobileView() {
     const containerRef = useRef<HTMLDivElement>(null);
-  let order = useRef([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+  let order = useRef([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]);
   let detailsEven = useRef(true);
   let clicks = useRef(0);
 
@@ -225,8 +225,11 @@ export function MobileView() {
     preventScrollOnSwipe: true,
     trackMouse: true
   });
+  // @ts-ignore
   const getCard = (index: number) => `#card${index}`;
+  // @ts-ignore
   const getCardContent = (index: number) => `#card-content-${index}`;
+  // @ts-ignore
   const getSliderItem = (index: number) => `#slide-item-${index}`;
 
   const handleNextCard = () => {
@@ -694,6 +697,3 @@ const step = async (direction: 'next' | 'prev' = 'next') => {
     </div>
   );
 }
-
-
-
