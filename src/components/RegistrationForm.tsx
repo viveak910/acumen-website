@@ -30,15 +30,7 @@ interface FormValues {
 const RegistrationForm: React.FC = () => {
   const [totalAmount, setTotalAmount] = useState(0);
   // Removed fileInputRef = useRef<HTMLInputElement>(null);
-  useEffect(() => {
-    const fetchData = async () => {
-      const req = await fetch("https://acumenbackend.onrender.com/api", {
-        method: "GET",
-    });
-  }
-
-  fetchData();
-}, []);
+  
 
 const events: Event[] = [
  
@@ -263,6 +255,15 @@ const events: Event[] = [
       formik.setFieldValue("selectedEvents", [...currentSelectedEvents, eventTitle]);
     }
   };
+  useEffect(() => {
+    const fetchData = async () => {
+      const req = await fetch("https://acumenbackend.onrender.com/api", {
+        method: "GET",
+    });
+  }
+
+  fetchData();
+}, []);
 
   
 

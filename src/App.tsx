@@ -12,10 +12,7 @@ import { useEffect } from "react";
 
 function App() {
   const isMobile = useDeviceDetect();
-  // useEffect(() => {
-  //   document.title = "ACUMEN-IT"; // ✅ Set correct title
-
-  // }, []);
+ 
 
   return (
     <Router>
