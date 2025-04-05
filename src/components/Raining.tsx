@@ -63,7 +63,7 @@ const coordinators = [
   {
     name: "Vaishnavi Cheruku",
     role: "Design Lead",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Vaishnavi.jpg?updatedAt=1743601422296"
+    image: "https://ik.imagekit.io/tmdgdnv8a/IMG_20250402_223258.jpg?updatedAt=1743870811629"
   },
   {
     name: "Saakshi",
