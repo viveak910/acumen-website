@@ -1,5 +1,7 @@
 import React from 'react';
 import Rainingl from './Rainingl';
+import arunaImg from './aruna.webp';
+
 
 
 const coordinators = [
@@ -16,7 +18,7 @@ const coordinators = [
   {
     name: "Dr. S. Aruna",
     role: "Faculty Coordinator",
-    image: "/src/components/aruna.webp"
+    image: arunaImg
   },
   {
     name: "Shahnawaz",
@@ -51,6 +53,12 @@ const coordinators = [
     name: "L Bhavani",
     role: "Overall Coordinator",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Bhavani.jpg?updatedAt=1743749477512"
+  },
+  {
+    name : "Shivamani",
+    role : "Overall Coordinator",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Shivamani.jpg?updatedAt=1743861364913"
+
   },
   {
     name: "Vaishnavi Cheruku",
