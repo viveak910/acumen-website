@@ -57,6 +57,7 @@ const coordinators = [
   {
     name : "Shivamani",
     role : "Overall Coordinator",
+    role2 : "Head of Marketing and Logistics",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Shivamani.jpg?updatedAt=1743861364913"
 
   },
