@@ -131,13 +131,13 @@ const ScrambledTitle: React.FC = () => {
 }
 
 const RainingLetters: React.FC = () => {
-  const [characters, setCharacters] = useState<Character[]>([])
-  const [activeIndices, setActiveIndices] = useState<Set<number>>(new Set())
+  const [characters, setCharacters] = useState<Character[]>([]);
+  const [activeIndices, setActiveIndices] = useState<Set<number>>(new Set());
 
   const createCharacters = useCallback(() => {
-    const allChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?"
-    const charCount = 300
-    const newCharacters: Character[] = []
+    const allChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?";
+    const charCount = 300;
+    const newCharacters: Character[] = [];
 
     for (let i = 0; i < charCount; i++) {
       newCharacters.push({
@@ -145,36 +145,36 @@ const RainingLetters: React.FC = () => {
         x: Math.random() * 100,
         y: Math.random() * 100,
         speed: 0.1 + Math.random() * 0.3,
-      })
+      });
     }
 
-    return newCharacters
-  }, [])
+    return newCharacters;
+  }, []);
 
   useEffect(() => {
-    setCharacters(createCharacters())
-  }, [createCharacters])
+    setCharacters(createCharacters());
+  }, [createCharacters]);
 
   useEffect(() => {
     const updateActiveIndices = () => {
-      const newActiveIndices = new Set<number>()
-      const numActive = Math.floor(Math.random() * 3) + 3
+      const newActiveIndices = new Set<number>();
+      const numActive = Math.floor(Math.random() * 3) + 3;
       for (let i = 0; i < numActive; i++) {
-        newActiveIndices.add(Math.floor(Math.random() * characters.length))
+        newActiveIndices.add(Math.floor(Math.random() * characters.length));
       }
-      setActiveIndices(newActiveIndices)
-    }
+      setActiveIndices(newActiveIndices);
+    };
 
-    const flickerInterval = setInterval(updateActiveIndices, 50)
-    return () => clearInterval(flickerInterval)
-  }, [characters.length])
+    const flickerInterval = setInterval(updateActiveIndices, 50);
+    return () => clearInterval(flickerInterval);
+  }, [characters.length]);
 
   useEffect(() => {
-    let animationFrameId: number
+    let animationFrameId: number;
 
     const updatePositions = () => {
-      setCharacters(prevChars => 
-        prevChars.map(char => ({
+      setCharacters((prevChars) =>
+        prevChars.map((char) => ({
           ...char,
           y: char.y + char.speed,
           ...(char.y >= 100 && {
@@ -185,17 +185,27 @@ const RainingLetters: React.FC = () => {
             ],
           }),
         }))
-      )
-      animationFrameId = requestAnimationFrame(updatePositions)
-    }
+      );
+      animationFrameId = requestAnimationFrame(updatePositions);
+    };
 
-    animationFrameId = requestAnimationFrame(updatePositions)
-    return () => cancelAnimationFrame(animationFrameId)
-  }, [])
+    animationFrameId = requestAnimationFrame(updatePositions);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, []);
 
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Title */}
+      {/* Heading Section */}
+      <div className="absolute top-20 left-0 w-full text-center z-20">
+        <h1 className="text-4xl md:text-6xl font-bold text-[#00ff00]">
+          Vasavi College of Engineering(A)
+        </h1>
+        <h2 className="text-lg md:text-2xl text-[#00ff00] mt-2">
+          Department of Information Technology presents
+        </h2>
+      </div>
+
+      {/* Scrambled Title */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
         <ScrambledTitle />
       </div>
@@ -212,14 +222,14 @@ const RainingLetters: React.FC = () => {
           style={{
             left: `${char.x}%`,
             top: `${char.y}%`,
-            transform: `translate(-50%, -50%) ${activeIndices.has(index) ? 'scale(1.25)' : 'scale(1)'}`,
-            textShadow: activeIndices.has(index) 
-              ? '0 0 8px rgba(255,255,255,0.8), 0 0 12px rgba(255,255,255,0.4)' 
-              : 'none',
+            transform: `translate(-50%, -50%) ${activeIndices.has(index) ? "scale(1.25)" : "scale(1)"}`,
+            textShadow: activeIndices.has(index)
+              ? "0 0 8px rgba(255,255,255,0.8), 0 0 12px rgba(255,255,255,0.4)"
+              : "none",
             opacity: activeIndices.has(index) ? 1 : 0.4,
-            transition: 'color 0.1s, transform 0.1s, text-shadow 0.1s',
-            willChange: 'transform, top',
-            fontSize: '1.8rem'
+            transition: "color 0.1s, transform 0.1s, text-shadow 0.1s",
+            willChange: "transform, top",
+            fontSize: "1.8rem",
           }}
         >
           {char.char}
@@ -231,10 +241,8 @@ const RainingLetters: React.FC = () => {
           opacity: 0.7;
         }
       `}</style>
-      
     </div>
-  )
-}
+  );
+};
 
-export default RainingLetters
-
+export default RainingLetters;
