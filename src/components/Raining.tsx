@@ -2,8 +2,6 @@ import React from 'react';
 import Rainingl from './Rainingl';
 import arunaImg from './aruna.webp';
 
-
-
 const coordinators = [
   {
     name: "Dr. S. V. Ramana",
