@@ -1,5 +1,7 @@
 import React from 'react';
 import Rainingl from './Rainingl';
+import arunaImg from './aruna.webp';
+
 
 
 const coordinators = [
@@ -16,7 +18,7 @@ const coordinators = [
   {
     name: "Dr. S. Aruna",
     role: "Faculty Coordinator",
-    image: "/src/components/aruna.webp"
+    image: arunaImg
   },
   {
     name: "Shahnawaz",
