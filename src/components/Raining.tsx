@@ -45,11 +45,6 @@ const coordinators = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/srinithi.png?updatedAt=1743601417737"
   },
   {
-    name: "Shivamani",
-    role: "Overall Coordinator",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Shivamani.jpg?updatedAt=1743861364913"
-  },
-  {
     name: "S Bagawan Reddy",
     role: "Overall Coordinator",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.23.55.jpeg?updatedAt=1743606872161"

@@ -195,7 +195,7 @@ const RainingLetters: React.FC = () => {
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">
       {/* Heading Section */}
-      <div className="absolute top-[26%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 px-4 py-4 text-center">
+      <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 px-4 py-4 text-center">
         <h1 className="whitespace-nowrap text-xl sm:text-3xl md:text-5xl font-extrabold text-white-400 drop-shadow-md">
           Vasavi College of Engineering (A)
         </h1>
