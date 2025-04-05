@@ -1,6 +1,7 @@
 import React from 'react';
 import Rainingl from './Rainingl';
 
+
 const coordinators = [
   {
     name: "Dr. S. V. Ramana",
@@ -8,14 +9,14 @@ const coordinators = [
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.14.jpeg?updatedAt=1743606872861"
   },
   {
-    name: "Dr.K.Ram Mohan Rao",
+    name: "Dr. K. Ram Mohan Rao",
     role: "HOD, IT",
     image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743607901543",
   },
   {
     name: "Dr. S. Aruna",
     role: "Faculty Coordinator",
-    image: "https://ik.imagekit.io/tmdgdnv8a/WhatsApp%20Image%202025-04-02%20at%2020.30.15.jpeg?updatedAt=1743606873421"
+    image: "/src/components/aruna.webp"
   },
   {
     name: "Shahnawaz",
