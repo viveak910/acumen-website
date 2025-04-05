@@ -67,6 +67,11 @@ const coordinators = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Sharath.jpg?updatedAt=1743601417941"
   },
   {
+    name: "Goutham Siddarth",
+    role: "Creative Lead",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Goutham%20Siddarth.jpg?updatedAt=1743829897879"
+  },
+  {
     name: "Jai Chandra",
     role: "Technology Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Jai%20Chandra%20.jpeg?updatedAt=1743601417588"
