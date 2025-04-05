@@ -196,15 +196,14 @@ const RainingLetters: React.FC = () => {
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">
       {/* Heading Section */}
-      <div className="absolute top-20 left-0 w-full text-center z-20 px-4">
-  <h1 className="text-3xl md:text-5xl font-extrabold text-green-400 drop-shadow-md">
-    Vasavi College of Engineering (Autonomous)
-  </h1>
-  <h2 className="text-base md:text-xl text-green-300 mt-3 font-medium tracking-wide">
-    Presented by the Department of Information Technology
-  </h2>
-</div>
-
+      <div className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 px-4 py-4 text-center">
+        <h1 className="whitespace-nowrap text-3xl md:text-5xl font-extrabold text-white-400 drop-shadow-md">
+          Vasavi College of Engineering (Autonomous)
+        </h1>
+        <h2 className="text-base md:text-xl text-green-300 mt-3 font-medium tracking-wide">
+         Department of Information Technology Presents
+        </h2>
+      </div>
 
       {/* Scrambled Title */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
