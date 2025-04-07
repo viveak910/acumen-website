@@ -78,28 +78,8 @@ const events: Event[] = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen/4.jpg?updatedAt=1743174841419",
     bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/photo1.jpg?updatedAt=1743177035751",
   },
-  {
-    place: "",
-    title: "IPL AUCTION",
-    id: 5,
-    location: "Some Location",
-    price: 50,
-    description:
-      "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen/5.jpg?updatedAt=1743174841139",
-    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/ipl1.jpg?updatedAt=1743177034708",
-  },
-  {
-    place: "",
-    title: "BGMI",
-    id: 6,
-    location: "Some Location",
-    price: 250,
-    description:
-      "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen/6.jpg?updatedAt=1743174841584",
-    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/bgmi1.webp?updatedAt=1743177036284",
-  },
+  
+
   {
     place: "",
     title: "DIGITAL PING PONG",
@@ -179,10 +159,10 @@ const events: Event[] = [
   },
   {
     place: "",
-    title: "AGENTS TALE",
+    title: "AGENTS TALE (TEAM SIZE 2)",
     id: 15,
     location: "Some Location",
-    price: 50,
+    price: 100,
     description: "",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/14.png?updatedAt=1743699431936",
     bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/14.png?updatedAt=1743699431936",
@@ -598,6 +578,21 @@ return (
       </div>
     </div>
   )}   
+    <div className="mt-8 text-center">
+      <h2 className="text-xl font-semibold text-[#00ff00] mb-4">Fill the form for these events</h2>
+      <button
+        onClick={() => window.open('https://example.com/ipl-auction', '_blank')}
+        className="bg-gray-800 text-white px-4 py-2 rounded-md mr-4"
+      >
+        IPL Auction
+      </button>
+      <button
+        onClick={() => window.open('https://forms.gle/Tvkvjv4Qagho66fy7', '_blank')}
+        className="bg-gray-800 text-white px-4 py-2 rounded-md"
+      >
+        BGMI
+      </button>
+    </div>
   </div>
 );
 };
