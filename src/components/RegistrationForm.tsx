@@ -581,7 +581,7 @@ return (
     <div className="mt-8 text-center">
       <h2 className="text-xl font-semibold text-[#00ff00] mb-4">Fill the form for these events</h2>
       <button
-        onClick={() => window.open('https://example.com/ipl-auction', '_blank')}
+        onClick={() => window.open('https://forms.gle/yYqnFqZvfXByFFEn9', '_blank')}
         className="bg-gray-800 text-white px-4 py-2 rounded-md mr-4"
       >
         IPL Auction

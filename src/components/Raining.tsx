@@ -1,6 +1,9 @@
 import React from 'react';
 import Rainingl from './Rainingl';
 import arunaImg from './aruna.webp';
+import image from './image.webp';
+import image2 from './image2.webp';
+import n from './n.webp';
 
 const coordinators = [
   {
@@ -17,6 +20,11 @@ const coordinators = [
     name: "Dr. S. Aruna",
     role: "Faculty Coordinator",
     image: arunaImg
+  },
+  {
+    name : "Dr. M. Neelakantappa", 
+    role : "Faculty Coordinator",
+    image : n
   },
   {
     name: "Shahnawaz",
@@ -229,6 +237,36 @@ function App() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sponsors Section */}
+        <section className="py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center text-white mb-16">Sponsors</h2>
+            {/* Display side by side on larger screens, stack on smaller screens */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+              <div
+                onClick={() => window.open('https://rinno.tech', '_blank')}
+                className="cursor-pointer"
+              >
+                <img
+                  src={image}
+                  alt="Sponsor 1"
+                  className="max-w-full h-auto object-contain"
+                />
+              </div>
+              <div
+                onClick={() => window.open('https://learning.decluttered.co.in', '_blank')}
+                className="cursor-pointer"
+              >
+                <img
+                  src={image2}
+                  alt="Sponsor 2"
+                  className="max-w-full h-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </section>
