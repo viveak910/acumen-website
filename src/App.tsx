@@ -8,6 +8,7 @@ import { useDeviceDetect } from "./useDeviceDetect";
 import Main from "./components/Main";
 import RegistrationForm from "./components/RegistrationForm";
 import { useEffect } from "react";
+import Co from "./components/Co";
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={isMobile? <MobileView/>:<TimedCards />} />
           <Route path="/register" element={<RegistrationForm/>} />
+          <Route path="/co" element={<Co/>} />
+
         </Routes>
       </div>
     </Router>
