@@ -189,6 +189,17 @@ const events: Event[] = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/17.png?updatedAt=1743699429416",
     bimage: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Mobile%20Posters/17.png?updatedAt=1743699429416",
   },
+  {
+    place: "",
+    title: "PIXEL ART",
+    id: 3,
+    location: "Some Location",
+    price: 30,
+    description:
+      "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
+    image: "https://ik.imagekit.io/k42ezweav/Acumen/3.jpg?updatedAt=1743174841415",
+    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/projexp1.webp?updatedAt=1743177036134",
+  },
 ];
 
 const validationSchema = Yup.object({
