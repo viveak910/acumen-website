@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { use } from "framer-motion/client";
 import { Link, useLocation } from 'react-router-dom';
+import qr from "./qr.webp"
 
 interface Event {
   place : string;
@@ -484,7 +485,7 @@ return (
             <div className="mt-6 flex flex-col items-center">
               <div className="bg-white p-4 rounded-md">
                 <img
-                  src="https://media-hosting.imagekit.io/1f6f0b73eb514eb9/WhatsApp%20Image%202025-04-03%20at%2023.12.19.jpeg?Expires=1838353410&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Z-jvJlwjU4Z2VSo7oJBLNaiaQGz7wbONagEi19AAW9kraDj4yGg~CPOCXpdMHx2I3aoPjcGC8yirdpIrcSk60B5Yxx5kac-4-R5Aj2L68bJa2YoKh5MiLkS1~tQoLScpfUYnmK3Ybq9nW0YqDW3wDborh~Q-xNKmGlOFnGJvmI46hgOSoW0~Eep3T-yIoDMrslx~OKryzLc3Z51ejfRlgosSAAr6Z3w8ylSJhbRQSheoX5HPJL64fgsSHjk~0H-v6WpmoUxR2kXdCuvSIDosed1HJqEh7vHR9B81MdT0b8MGJvAEY7z3h2LnbqnrNiRLqXbUHLFOtqLlCgO4Ms0seA__"
+                  src={qr}
                   alt="Payment QR Code"
                   className="w-48 h-48"
                 />
