@@ -139,17 +139,6 @@ const events: Event[] = [
   },
   {
     place: "",
-    title: "DRONE DOJO",
-    id: 13,
-    location: "Some Location",
-    price: 50,
-    description:
-      "Zhangjiajie National Forest Park, with its towering sandstone pillars, inspired the floating mountains in the movie Avatar. Hiking through this surreal landscape offers breathtaking views and a sense of wonder.",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen/13.jpg?updatedAt=1743174841273",
-    bimage: "https://ik.imagekit.io/k42ezweav/AcumenBG/drone1.jpg?updatedAt=1743177039038",
-  },
-  {
-    place: "",
     title: "NERF TAG",
     id: 14,
     location: "Some Location",
