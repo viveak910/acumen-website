@@ -4,6 +4,7 @@ import * as Yup from "yup";
 
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { use } from "framer-motion/client";
+import { Link, useLocation } from 'react-router-dom';
 
 interface Event {
   place : string;
@@ -31,6 +32,7 @@ interface FormValues {
 }
 
 const RegistrationForm: React.FC = () => {
+  const location = useLocation();
   const [totalAmount, setTotalAmount] = useState(0);
 
 const events: Event[] = [
@@ -592,6 +594,16 @@ return (
       >
         BGMI
       </button>
+    </div>
+    <div className="mt-8 text-center">
+      <Link
+        to="/co"
+        className={`text-white hover:text-[#00ff00] transition-colors ${
+          location.pathname === "/co" ? "border-b-2 border-[#00ff00]" : ""
+        }`}
+      >
+        Coordinators
+      </Link>
     </div>
   </div>
 );

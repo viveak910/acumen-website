@@ -10,7 +10,8 @@ const data = [
     title2: "AND POSTER",
     description:
       "Step into the spotlight and make your ideas stand out! Just like a visionary in a crowd, let your research, analysis, and creativity shine through. Whether it's groundbreaking concepts or innovative solutions, seize this opportunity to showcase your intellect and leave a mark at Acumen 2025!",
-    image: "https://media-hosting.imagekit.io/be466b8771a9461b/1.jpg?Expires=1838302820&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=KofTLzNwS2bgdDkhP6thmH24GU0XB7RTP6xU~eeyc-zBwmRS8KI9XGZpSQnWFLSNntpLG9xAGupcQLSZWMYZ6x8mlfAwGUviBIDCazva7ceQ0CK9w9TPS2Qh8BBHIu93YJJxjCgVLFy11E4BvY7kq-nDhhjpR5B282-lYKwr024eMRpPP4pynkg5cQzzbUp51JPi8GpBgeOLZw9gVWpVqPuMp2I2ig2dParmBJRTeuALcyP45H5fzEPXNT7Uj5XHX4ZYHst5ONFy1bzN6R0zNQGrgGgR3BRfgc76pOYej8No4oUsyruyshkeHJsnsTu39nVYF8fTRz-yQKenE4Gbuw__" },
+    image: "https://media-hosting.imagekit.io/be466b8771a9461b/1.jpg?Expires=1838302820&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=KofTLzNwS2bgdDkhP6thmH24GU0XB7RTP6xU~eeyc-zBwmRS8KI9XGZpSQnWFLSNntpLG9xAGupcQLSZWMYZ6x8mlfAwGUviBIDCazva7ceQ0CK9w9TPS2Qh8BBHIu93YJJxjCgVLFy11E4BvY7kq-nDhhjpR5B282-lYKwr024eMRpPP4pynkg5cQzzbUp51JPi8GpBgeOLZw9gVWpVqPuMp2I2ig2dParmBJRTeuALcyP45H5fzEPXNT7Uj5XHX4ZYHst5ONFy1bzN6R0zNQGrgGgR3BRfgc76pOYej8No4oUsyruyshkeHJsnsTu39nVYF8fTRz-yQKenE4Gbuw__" 
+  },
   {
     place: "",
     title: "WEBATHON",

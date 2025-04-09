@@ -30,14 +30,7 @@ export const Navbar: React.FC = () => {
           >
             Events
           </Link>
-          <Link
-            to="/co"
-            className={`text-white hover:text-[#00ff00] transition-colors ${
-              location.pathname === "/co" ? "border-b-2 border-[#00ff00]" : ""
-            }`}
-          >
-            Coordinators
-          </Link>
+          
           
           
           <Link
