@@ -4,6 +4,8 @@ import arunaImg from './aruna.webp';
 import image from './image.webp';
 import image2 from './image2.webp';
 import n from './n.webp';
+import m from './sponsor2.webp'
+import mm from './some.webp'
 
 const coordinators = [
   {
@@ -21,11 +23,7 @@ const coordinators = [
     role: "Faculty Coordinator",
     image: arunaImg
   },
-  {
-    name : "Dr. M. Neelakantappa", 
-    role : "Faculty Coordinator",
-    image : n
-  },
+  
   {
     name: "Shahnawaz",
     role: "Overall Acumen IT Coordinator ",
@@ -60,13 +58,7 @@ const coordinators = [
     role: "Overall Coordinator",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Bhavani.jpg?updatedAt=1743749477512"
   },
-  {
-    name : "Shivamani",
-    role : "Overall Coordinator",
-    role2 : "Head of Marketing and Logistics",
-    image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Shivamani.jpg?updatedAt=1743861364913"
-
-  },
+  
   {
     name: "Vaishnavi Cheruku",
     role: "Design Lead",
@@ -83,6 +75,11 @@ const coordinators = [
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Sharath.jpg?updatedAt=1743601417941"
   },
   {
+    name: "B Nitish Kumar ",
+    role: "Logistics Lead",
+    image: mm
+  },
+  {
     name: "Goutham Siddarth",
     role: "Creative Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Goutham%20Siddarth.jpg?updatedAt=1743829897879"
@@ -92,6 +89,7 @@ const coordinators = [
     role: "Technology Lead",
     image: "https://ik.imagekit.io/k42ezweav/Acumen%20Final/Organisers/Jai%20Chandra%20.jpeg?updatedAt=1743601417588"
   },
+
   {
     name: "Viveak",
     role: "Developer",
@@ -249,22 +247,34 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
               <div
                 onClick={() => window.open('https://rinno.tech', '_blank')}
-                className="cursor-pointer"
+                className="cursor-pointer w-80 h-80 flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={image}
                   alt="Sponsor 1"
-                  className="max-w-full h-auto object-contain"
+                  className="object-contain w-full h-full"
                 />
               </div>
               <div
                 onClick={() => window.open('https://learning.decluttered.co.in', '_blank')}
-                className="cursor-pointer"
+                className="cursor-pointer w-80 h-80 flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={image2}
                   alt="Sponsor 2"
-                  className="max-w-full h-auto object-contain"
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 place-items-center mt-8">
+              <div
+                onClick={() => window.open('https://www.sapphirehomes.co.in/', '_blank')}
+                className="cursor-pointer w-80 h-80 flex items-center justify-center overflow-hidden"
+              >
+                <img
+                  src={m}
+                  alt="Sponsor 2"
+                  className="object-contain w-full h-full"
                 />
               </div>
             </div>
